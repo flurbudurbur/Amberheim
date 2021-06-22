@@ -1,3 +1,6 @@
+# README
+These are all the plugins we use on the Amberheim Minecraft server.
+
 ## If you want to contribute, simply follow these steps:
 - Open the file you want to edit.
 - Click on the pencil icon at the top right of the file.
