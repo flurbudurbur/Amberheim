@@ -1,0 +1,8 @@
+bestToolsEnabled: false
+hotbarOnly: true
+refillEnabled: true
+hasSeenBestToolsMessage: true
+hasSeenRefillMessage: false
+favoriteSlot: 8
+swordOnMobs: true
+blacklist: []

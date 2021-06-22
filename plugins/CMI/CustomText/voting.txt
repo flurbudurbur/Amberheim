@@ -1,0 +1,5 @@
+<T>&3Thanks for considering to vote, &d[playerName]&3!</T>
+
+<T>&31. &b&nPlanet Minecraft</T><H>&3Click to vote on\nplanetminecraft.com!</H><URL>http://planetminecraft.amberheim.com</URL>
+<T>&32. &b&nMinecraft Servers</T><H>&3Click to vote on\nminecraftservers.org</H><URL>http://minecraftservers.amberheim.com</URL>
+<T>&32. &b&nMC Lists</T><H>&3Click to vote on\nmc-lists.org</H><URL>http://mc-lists.amberheim.com</URL>

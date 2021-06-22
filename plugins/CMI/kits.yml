@@ -1,0 +1,1130 @@
+# Player should have appropriate permission node to use particular kit: cmi.kit.[kitName]
+# cmi.kit.newbie will allow to use newbie kit
+# Possible custom variables: {USERNAME} {DISPLAYNAME} {WORLDNAME} {KITNAME} {RANDOMPLAYER}
+# Edit kits ingame with /cmi kiteditor to avoid formating issues
+
+Pixie:
+  CommandName: Pixie
+  MaxUsages: 1
+  Items:
+    '1':
+      v: 2586
+      type: GOLDEN_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Pixie
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Dagger"}],"text":""}'
+        enchants:
+          MENDING: 1
+          DAMAGE_ALL: 5
+          DURABILITY: 5
+    Helmet:
+      v: 2586
+      type: LEATHER_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Pixie
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Cap"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 2
+        Unbreakable: true
+        color:
+          ==: Color
+          RED: 230
+          BLUE: 62
+          GREEN: 234
+    Chest:
+      v: 2586
+      type: LEATHER_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Pixie
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Tunic"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 2
+        Unbreakable: true
+        color:
+          ==: Color
+          RED: 170
+          BLUE: 53
+          GREEN: 214
+    Legs:
+      v: 2586
+      type: LEATHER_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Pixie
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Pants"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 2
+        Unbreakable: true
+        color:
+          ==: Color
+          RED: 212
+          BLUE: 75
+          GREEN: 229
+    Boots:
+      v: 2586
+      type: LEATHER_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Pixie
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Boots"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 2
+        Unbreakable: true
+        color:
+          ==: Color
+          RED: 222
+          BLUE: 121
+          GREEN: 236
+Fairy:
+  CommandName: Fairy
+  MaxUsages: 1
+  Items:
+    '1':
+      v: 2586
+      type: GOLDEN_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_green","text":"Fairy
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Dagger"}],"text":""}'
+        enchants:
+          MENDING: 1
+          DAMAGE_ALL: 6
+          SWEEPING_EDGE: 1
+          DURABILITY: 5
+    Helmet:
+      v: 2586
+      type: LEATHER_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_green","text":"Fairy
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Cap"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 3
+        Unbreakable: true
+        color:
+          ==: Color
+          RED: 145
+          BLUE: 83
+          GREEN: 184
+    Chest:
+      v: 2586
+      type: LEATHER_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_green","text":"Fairy
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Tunic"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 3
+        Unbreakable: true
+        color:
+          ==: Color
+          RED: 145
+          BLUE: 83
+          GREEN: 184
+    Legs:
+      v: 2586
+      type: LEATHER_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_green","text":"Fairy
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Pants"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 3
+        Unbreakable: true
+        color:
+          ==: Color
+          RED: 145
+          BLUE: 83
+          GREEN: 184
+    Boots:
+      v: 2586
+      type: LEATHER_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_green","text":"Fairy
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Boots"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 3
+        Unbreakable: true
+        color:
+          ==: Color
+          RED: 145
+          BLUE: 83
+          GREEN: 184
+Gnome:
+  CommandName: Gnome
+  MaxUsages: 1
+  Items:
+    '1':
+      v: 2586
+      type: GOLDEN_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"blue","text":"Gnome
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Dagger"}],"text":""}'
+        enchants:
+          MENDING: 1
+          DAMAGE_ALL: 7
+          SWEEPING_EDGE: 1
+          DURABILITY: 5
+    Helmet:
+      v: 2586
+      type: LEATHER_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"blue","text":"Gnome
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Cap"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 4
+        Unbreakable: true
+        color:
+          ==: Color
+          RED: 134
+          BLUE: 184
+          GREEN: 66
+    Chest:
+      v: 2586
+      type: LEATHER_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"blue","text":"Gnome
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Tunic"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 4
+        Unbreakable: true
+        color:
+          ==: Color
+          RED: 134
+          BLUE: 184
+          GREEN: 66
+    Legs:
+      v: 2586
+      type: LEATHER_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"blue","text":"Gnome
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Pants"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 4
+        Unbreakable: true
+        color:
+          ==: Color
+          RED: 134
+          BLUE: 184
+          GREEN: 66
+    Boots:
+      v: 2586
+      type: LEATHER_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"blue","text":"Gnome
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Boots"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 4
+        Unbreakable: true
+        color:
+          ==: Color
+          RED: 134
+          BLUE: 184
+          GREEN: 66
+Spirit:
+  CommandName: Spirit
+  MaxUsages: 1
+  Items:
+    '1':
+      v: 2586
+      type: GOLDEN_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_purple","text":"Spirit
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Dagger"}],"text":""}'
+        enchants:
+          MENDING: 1
+          DAMAGE_ALL: 8
+          SWEEPING_EDGE: 1
+          DURABILITY: 5
+    Helmet:
+      v: 2586
+      type: LEATHER_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_purple","text":"Spirit
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Cap"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 5
+        Unbreakable: true
+        color:
+          ==: Color
+          RED: 22
+          BLUE: 156
+          GREEN: 156
+    Chest:
+      v: 2586
+      type: LEATHER_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_purple","text":"Spirit
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Tunic"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 5
+        Unbreakable: true
+        color:
+          ==: Color
+          RED: 22
+          BLUE: 156
+          GREEN: 156
+    Legs:
+      v: 2586
+      type: LEATHER_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_purple","text":"Spirit
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Pants"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 5
+        Unbreakable: true
+        color:
+          ==: Color
+          RED: 22
+          BLUE: 156
+          GREEN: 156
+    Boots:
+      v: 2586
+      type: LEATHER_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_purple","text":"Spirit
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Boots"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 5
+        Unbreakable: true
+        color:
+          ==: Color
+          RED: 22
+          BLUE: 156
+          GREEN: 156
+Nymph:
+  CommandName: Nymph
+  MaxUsages: 1
+  Items:
+    '1':
+      v: 2586
+      type: GOLDEN_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Nymph
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Dagger"}],"text":""}'
+        enchants:
+          LOOT_BONUS_MOBS: 1
+          MENDING: 1
+          DAMAGE_ALL: 9
+          SWEEPING_EDGE: 2
+          DURABILITY: 5
+    Helmet:
+      v: 2586
+      type: LEATHER_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Nymph
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Cap"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 6
+          THORNS: 1
+        Unbreakable: true
+        color:
+          ==: Color
+          RED: 187
+          BLUE: 113
+          GREEN: 62
+    Chest:
+      v: 2586
+      type: LEATHER_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Nymph
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Tunic"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 6
+          THORNS: 1
+        Unbreakable: true
+        color:
+          ==: Color
+          RED: 187
+          BLUE: 113
+          GREEN: 62
+    Legs:
+      v: 2586
+      type: LEATHER_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Nymph
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Pants"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 6
+          THORNS: 1
+        Unbreakable: true
+        color:
+          ==: Color
+          RED: 187
+          BLUE: 113
+          GREEN: 62
+    Boots:
+      v: 2586
+      type: LEATHER_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Nymph
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Boots"}],"text":""}'
+        enchants:
+          PROTECTION_FALL: 2
+          PROTECTION_ENVIRONMENTAL: 6
+          THORNS: 1
+        Unbreakable: true
+        color:
+          ==: Color
+          RED: 187
+          BLUE: 113
+          GREEN: 62
+Lamia:
+  CommandName: Lamia
+  MaxUsages: 1
+  Items:
+    '1':
+      v: 2586
+      type: GOLDEN_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Lamia
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Dagger"}],"text":""}'
+        enchants:
+          LOOT_BONUS_MOBS: 1
+          MENDING: 1
+          DAMAGE_ALL: 10
+          SWEEPING_EDGE: 2
+          DURABILITY: 5
+    Helmet:
+      v: 2586
+      type: LEATHER_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Lamia
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Cap"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 7
+          THORNS: 1
+        Unbreakable: true
+        color:
+          ==: Color
+          RED: 251
+          BLUE: 45
+          GREEN: 172
+    Chest:
+      v: 2586
+      type: LEATHER_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Lamia
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Tunic"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 7
+          THORNS: 1
+        Unbreakable: true
+        color:
+          ==: Color
+          RED: 251
+          BLUE: 45
+          GREEN: 172
+    Legs:
+      v: 2586
+      type: LEATHER_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Lamia
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Pants"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 7
+          THORNS: 1
+        Unbreakable: true
+        color:
+          ==: Color
+          RED: 251
+          BLUE: 45
+          GREEN: 172
+    Boots:
+      v: 2586
+      type: LEATHER_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Lamia
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Boots"}],"text":""}'
+        enchants:
+          PROTECTION_FALL: 2
+          PROTECTION_ENVIRONMENTAL: 7
+          THORNS: 1
+        Unbreakable: true
+        color:
+          ==: Color
+          RED: 251
+          BLUE: 45
+          GREEN: 172
+Pegasus:
+  CommandName: Pegasus
+  MaxUsages: 1
+  Items:
+    '1':
+      v: 2586
+      type: IRON_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_blue","text":"Pegasus
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Blade"}],"text":""}'
+        enchants:
+          LOOT_BONUS_MOBS: 3
+          MENDING: 1
+          DAMAGE_ALL: 9
+          SWEEPING_EDGE: 3
+          DURABILITY: 5
+    Helmet:
+      v: 2586
+      type: LEATHER_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_blue","text":"Pegasus
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Cap"}],"text":""}'
+        enchants:
+          WATER_WORKER: 1
+          PROTECTION_ENVIRONMENTAL: 9
+          THORNS: 3
+        Unbreakable: true
+    Chest:
+      v: 2586
+      type: LEATHER_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_blue","text":"Pegasus
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Tunic"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 9
+          THORNS: 3
+        Unbreakable: true
+    Legs:
+      v: 2586
+      type: LEATHER_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_blue","text":"Pegasus
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Pants"}],"text":""}'
+        enchants:
+          PROTECTION_FALL: 4
+          PROTECTION_ENVIRONMENTAL: 9
+          THORNS: 3
+        Unbreakable: true
+    Boots:
+      v: 2586
+      type: LEATHER_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_blue","text":"Pegasus
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Boots"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 9
+          THORNS: 3
+        Unbreakable: true
+Unicorn:
+  CommandName: Unicorn
+  MaxUsages: 1
+  Items:
+    '1':
+      v: 2586
+      type: IRON_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"light_purple","text":"Unicorn
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Blade"}],"text":""}'
+        enchants:
+          LOOT_BONUS_MOBS: 2
+          MENDING: 1
+          DAMAGE_ALL: 7
+          SWEEPING_EDGE: 3
+          DURABILITY: 5
+    Helmet:
+      v: 2586
+      type: LEATHER_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"light_purple","text":"Unicorn
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Cap"}],"text":""}'
+        enchants:
+          WATER_WORKER: 1
+          PROTECTION_ENVIRONMENTAL: 8
+          THORNS: 2
+        Unbreakable: true
+        color:
+          ==: Color
+          RED: 221
+          BLUE: 179
+          GREEN: 108
+    Chest:
+      v: 2586
+      type: LEATHER_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"light_purple","text":"Unicorn
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Tunic"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 8
+          THORNS: 2
+        Unbreakable: true
+        color:
+          ==: Color
+          RED: 221
+          BLUE: 179
+          GREEN: 108
+    Legs:
+      v: 2586
+      type: LEATHER_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"light_purple","text":"Unicorn
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Pants"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 8
+          THORNS: 2
+        Unbreakable: true
+        color:
+          ==: Color
+          RED: 221
+          BLUE: 179
+          GREEN: 108
+    Boots:
+      v: 2586
+      type: LEATHER_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"light_purple","text":"Unicorn
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Boots"}],"text":""}'
+        enchants:
+          PROTECTION_FALL: 3
+          PROTECTION_ENVIRONMENTAL: 8
+          THORNS: 2
+        Unbreakable: true
+        color:
+          ==: Color
+          RED: 221
+          BLUE: 179
+          GREEN: 108
+Chimera:
+  CommandName: Chimera
+  MaxUsages: 1
+  Items:
+    '1':
+      v: 2586
+      type: IRON_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_red","text":"Chimera
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Blade"}],"text":""}'
+        enchants:
+          FIRE_ASPECT: 1
+          LOOT_BONUS_MOBS: 3
+          MENDING: 1
+          DAMAGE_ALL: 10
+          SWEEPING_EDGE: 4
+          DURABILITY: 5
+    Helmet:
+      v: 2586
+      type: LEATHER_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Chimera
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Cap"}],"text":""}'
+        enchants:
+          WATER_WORKER: 1
+          PROTECTION_ENVIRONMENTAL: 10
+          THORNS: 4
+        Unbreakable: true
+    Chest:
+      v: 2586
+      type: LEATHER_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Chimera
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Tunic"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 10
+          THORNS: 4
+        Unbreakable: true
+    Legs:
+      v: 2586
+      type: LEATHER_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Chimera
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Pants"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 10
+          THORNS: 4
+        Unbreakable: true
+    Boots:
+      v: 2586
+      type: LEATHER_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Chimera
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Boots"}],"text":""}'
+        enchants:
+          PROTECTION_FALL: 5
+          PROTECTION_ENVIRONMENTAL: 10
+          THORNS: 4
+        Unbreakable: true
+Minotaur:
+  CommandName: Minotaur
+  MaxUsages: 1
+  Items:
+    '1':
+      v: 2586
+      type: IRON_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_green","text":"Minotaur
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Blade"}],"text":""}'
+        enchants:
+          FIRE_ASPECT: 2
+          LOOT_BONUS_MOBS: 3
+          MENDING: 1
+          DAMAGE_ALL: 11
+          SWEEPING_EDGE: 5
+          DURABILITY: 5
+    Helmet:
+      v: 2586
+      type: LEATHER_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_green","text":"Minotaur
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Cap"}],"text":""}'
+        enchants:
+          WATER_WORKER: 1
+          PROTECTION_ENVIRONMENTAL: 11
+          THORNS: 5
+        Unbreakable: true
+    Chest:
+      v: 2586
+      type: LEATHER_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_green","text":"Minotaur
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Tunic"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 11
+          THORNS: 5
+        Unbreakable: true
+    Legs:
+      v: 2586
+      type: LEATHER_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_green","text":"Minotaur
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Pants"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 11
+          THORNS: 5
+        Unbreakable: true
+    Boots:
+      v: 2586
+      type: LEATHER_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_green","text":"Minotaur
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Boots"}],"text":""}'
+        enchants:
+          PROTECTION_FALL: 6
+          PROTECTION_ENVIRONMENTAL: 11
+          THORNS: 5
+        Unbreakable: true
+Centaur:
+  CommandName: Centaur
+  MaxUsages: 1
+  Items:
+    '1':
+      v: 2586
+      type: DIAMOND_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"blue","text":"Centaur
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Blade"}],"text":""}'
+        enchants:
+          FIRE_ASPECT: 3
+          LOOT_BONUS_MOBS: 3
+          MENDING: 1
+          DAMAGE_ALL: 12
+          SWEEPING_EDGE: 6
+          DURABILITY: 5
+    Helmet:
+      v: 2586
+      type: LEATHER_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"blue","text":"Centaur
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Cap"}],"text":""}'
+        enchants:
+          WATER_WORKER: 1
+          PROTECTION_ENVIRONMENTAL: 12
+          THORNS: 6
+        Unbreakable: true
+    Chest:
+      v: 2586
+      type: LEATHER_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"blue","text":"Centaur
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Tunic"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 12
+          THORNS: 6
+        Unbreakable: true
+    Legs:
+      v: 2586
+      type: LEATHER_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"blue","text":"Centaur
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Pants"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 12
+          THORNS: 6
+        Unbreakable: true
+    Boots:
+      v: 2586
+      type: LEATHER_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"blue","text":"Centaur
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Boots"}],"text":""}'
+        enchants:
+          PROTECTION_FALL: 7
+          PROTECTION_ENVIRONMENTAL: 12
+          THORNS: 6
+        Unbreakable: true
+Sphinx:
+  CommandName: Sphinx
+  MaxUsages: 1
+  Items:
+    '1':
+      v: 2586
+      type: DIAMOND_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Sphinx
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Blade"}],"text":""}'
+        enchants:
+          FIRE_ASPECT: 4
+          LOOT_BONUS_MOBS: 3
+          MENDING: 1
+          DAMAGE_ALL: 13
+          SWEEPING_EDGE: 7
+          DURABILITY: 5
+    Helmet:
+      v: 2586
+      type: LEATHER_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Sphinx
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Cap"}],"text":""}'
+        enchants:
+          WATER_WORKER: 1
+          PROTECTION_ENVIRONMENTAL: 13
+          THORNS: 7
+        Unbreakable: true
+    Chest:
+      v: 2586
+      type: LEATHER_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Sphinx
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Tunic"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 13
+          THORNS: 7
+        Unbreakable: true
+    Legs:
+      v: 2586
+      type: LEATHER_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Sphinx
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Pants"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 13
+          THORNS: 7
+        Unbreakable: true
+    Boots:
+      v: 2586
+      type: LEATHER_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Sphinx
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Boots"}],"text":""}'
+        enchants:
+          PROTECTION_FALL: 8
+          PROTECTION_ENVIRONMENTAL: 13
+          THORNS: 7
+        Unbreakable: true
+Wyvern:
+  CommandName: Wyvern
+  MaxUsages: 1
+  Items:
+    '1':
+      v: 2586
+      type: DIAMOND_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Wyvern
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Blade"}],"text":""}'
+        enchants:
+          FIRE_ASPECT: 5
+          LOOT_BONUS_MOBS: 3
+          MENDING: 1
+          DAMAGE_ALL: 14
+          SWEEPING_EDGE: 8
+          DURABILITY: 5
+    Helmet:
+      v: 2586
+      type: LEATHER_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Wyvern
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Cap"}],"text":""}'
+        enchants:
+          WATER_WORKER: 1
+          PROTECTION_ENVIRONMENTAL: 14
+          THORNS: 8
+        Unbreakable: true
+    Chest:
+      v: 2586
+      type: LEATHER_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Wyvern
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Tunic"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 14
+          THORNS: 8
+        Unbreakable: true
+    Legs:
+      v: 2586
+      type: LEATHER_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Wyvern
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Pants"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 14
+          THORNS: 8
+        Unbreakable: true
+    Boots:
+      v: 2586
+      type: LEATHER_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Wyvern
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Boots"}],"text":""}'
+        enchants:
+          PROTECTION_FALL: 9
+          PROTECTION_ENVIRONMENTAL: 14
+          THORNS: 8
+        Unbreakable: true
+Dragon:
+  CommandName: Dragon
+  MaxUsages: 1
+  Items:
+    '1':
+      v: 2586
+      type: NETHERITE_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Dragon
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Blade"}],"text":""}'
+        enchants:
+          FIRE_ASPECT: 6
+          LOOT_BONUS_MOBS: 3
+          MENDING: 1
+          DAMAGE_ALL: 15
+          SWEEPING_EDGE: 10
+          DURABILITY: 5
+    Helmet:
+      v: 2586
+      type: LEATHER_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Dragon
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Cap"}],"text":""}'
+        enchants:
+          WATER_WORKER: 1
+          PROTECTION_ENVIRONMENTAL: 15
+          THORNS: 10
+        Unbreakable: true
+    Chest:
+      v: 2586
+      type: LEATHER_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Dragon
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Tunic"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 15
+          THORNS: 10
+        Unbreakable: true
+    Legs:
+      v: 2586
+      type: LEATHER_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Dragon
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Pants"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 15
+          THORNS: 10
+        Unbreakable: true
+    Boots:
+      v: 2586
+      type: LEATHER_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Dragon
+          "},{"bold":true,"italic":false,"color":"aqua","text":"Boots"}],"text":""}'
+        enchants:
+          PROTECTION_FALL: 10
+          PROTECTION_ENVIRONMENTAL: 15
+          THORNS: 10
+        Unbreakable: true
+Starter:
+  CommandName: Starter
+  DisplayName: '&7Starter'
+  Delay: 10
+  MaxUsages: 1
+  Items:
+    '28':
+      v: 2586
+      type: STONE_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Starter
+          Sword"}],"text":""}'
+    '29':
+      v: 2586
+      type: STONE_PICKAXE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Starter
+          Pickaxe"}],"text":""}'
+    Helmet:
+      v: 2586
+      type: LEATHER_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Starter
+          Cap"}],"text":""}'
+    Chest:
+      v: 2586
+      type: LEATHER_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Starter
+          Tunic"}],"text":""}'
+    Legs:
+      v: 2586
+      type: LEATHER_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Starter
+          Leggings"}],"text":""}'
+    Boots:
+      v: 2586
+      type: LEATHER_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Starter
+          Boots"}],"text":""}'
+    OffHand:
+      v: 2586
+      type: COOKED_BEEF
+      amount: 8

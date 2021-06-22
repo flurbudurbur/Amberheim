@@ -1,0 +1,4 @@
+<AutoPage><AutoAlias><NoReqPermission>
+<T>&3Welcome &d[playerDisplayname]&3!</T>
+<T>&b/rules</T><H>&3Click me!</H><C>/rules</C><Next><T> &3for rules.</T>
+<T>&b/discord</T><H>&3Click me!</H><URL>http://discord.amberheim.com</URL><Next><T>&3 for Discord.</T>

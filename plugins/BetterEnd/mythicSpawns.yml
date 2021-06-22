@@ -1,0 +1,42 @@
+#The maximum number of Mythic Mobs in the world before the plugin stops attempting to spawn more.
+mythicmob-cap: 10
+#Whether the cap is calculated per-player. Ex: If the cap is 10 and there
+#are 5 players online, the effective cap will be 50.
+cap-is-per-player: true
+#The number of seconds between spawn attempts.
+spawn-frequency: 5
+#The configuration of mobs
+mobs:
+  - name: SkeletalKnight
+    biomes: 
+      - AETHER
+      - AETHER_HIGHLANDS
+      - AETHER_FOREST
+    weight: 50
+    minDistance: 10
+    maxDistance: 30
+    minGroupSize: 1
+    maxGroupSize: 2
+    maxLight: 9
+    spawn: GROUND
+  - name: SkeletalMinion
+    biomes: 
+      - AETHER
+      - END
+    weight: 50
+    minDistance: 10
+    maxDistance: 30
+    minGroupSize: 1
+    maxGroupSize: 4
+    maxLight: 9
+    spawn: GROUND
+  - name: PhantomSpawn
+    biomes: 
+      - AETHER
+    weight: 50
+    minDistance: 10
+    maxDistance: 30
+    minGroupSize: 1
+    maxGroupSize: 4
+    maxLight: 9
+    spawn: AIR

@@ -1,0 +1,169 @@
+p1:
+  next: 'I'
+  from: 'Dragon'
+  to: 'Soul'
+  requirements:
+    - 'money 5000000'
+  prestige:
+    requirements-not-met: |-
+      &4&m+                                       +
+      &cYou need
+      &c- &d&l${{rank.requirement('money').total | money}} &c&l- &b[%progress_bar_{rankup_requirement_money_percent_done}_c:&d|_p:&d|_r:&3|_l:20_m:100_fullbar:&a&lCompleted!%&b]
+      &cto prestige from &7&l{{from}}&r&c to &e&l{{to}}&r&c!
+      &4&m+                                       +
+  commands:
+    - 'money set {{player}} 0'
+    - 'xp set {{player}} 0 levels'
+p2:
+  rank: 'I'
+  next: 'II'
+  from: 'Dragon'
+  to: 'Soul'
+  requirements:
+    - 'money 50000000'
+  prestige:
+    requirements-not-met: |-
+      &4&m+                                       +
+      &cYou need
+      &c- &d&l${{rank.requirement('money').total | money}} &c&l- &b[%progress_bar_{rankup_requirement_money_percent_done}_c:&d|_p:&d|_r:&3|_l:20_m:100_fullbar:&a&lCompleted!%&b]
+      &cto prestige from &7&l{{from}}&r&c to &e&l{{to}}&r&c!
+      &4&m+                                       +
+  commands:
+    - 'money set {{player}} 0'
+    - 'xp set {{player}} 0 levels'
+p3:
+  rank: 'II'
+  next: 'III'
+  from: 'Dragon'
+  to: 'Soul'
+  requirements:
+    - 'money 500000000'
+  prestige:
+    requirements-not-met: |-
+      &4&m+                                       +
+      &cYou need
+      &c- &d&l${{rank.requirement('money').total | money}} &c&l- &b[%progress_bar_{rankup_requirement_money_percent_done}_c:&d|_p:&d|_r:&3|_l:20_m:100_fullbar:&a&lCompleted!%&b]
+      &cto prestige from &7&l{{from}}&r&c to &e&l{{to}}&r&c!
+      &4&m+                                       +
+  commands:
+    - 'money set {{player}} 0'
+    - 'xp set {{player}} 0 levels'
+p4:
+  rank: 'III'
+  next: 'IV'
+  from: 'Dragon'
+  to: 'Soul'
+  requirements:
+    - 'money 5000000000'
+  prestige:
+    requirements-not-met: |-
+      &4&m+                                       +
+      &cYou need
+      &c- &d&l${{rank.requirement('money').total | money}} &c&l- &b[%progress_bar_{rankup_requirement_money_percent_done}_c:&d|_p:&d|_r:&3|_l:20_m:100_fullbar:&a&lCompleted!%&b]
+      &cto prestige from &7&l{{from}}&r&c to &e&l{{to}}&r&c!
+      &4&m+                                       +
+  commands:
+    - 'money set {{player}} 0'
+    - 'xp set {{player}} 0 levels'
+p5:
+  rank: 'IV'
+  next: 'V'
+  from: 'Dragon'
+  to: 'Soul'
+  requirements:
+    - 'money 50000000000'
+  prestige:
+    requirements-not-met: |-
+      &4&m+                                       +
+      &cYou need
+      &c- &d&l${{rank.requirement('money').total | money}} &c&l- &b[%progress_bar_{rankup_requirement_money_percent_done}_c:&d|_p:&d|_r:&3|_l:20_m:100_fullbar:&a&lCompleted!%&b]
+      &cto prestige from &7&l{{from}}&r&c to &e&l{{to}}&r&c!
+      &4&m+                                       +
+  commands:
+    - 'money set {{player}} 0'
+    - 'xp set {{player}} 0 levels'
+p6:
+  rank: 'V'
+  next: 'VI'
+  from: 'Dragon'
+  to: 'Soul'
+  requirements:
+    - 'money 500000000000'
+  prestige:
+    requirements-not-met: |-
+      &4&m+                                       +
+      &cYou need
+      &c- &d&l${{rank.requirement('money').total | money}} &c&l- &b[%progress_bar_{rankup_requirement_money_percent_done}_c:&d|_p:&d|_r:&3|_l:20_m:100_fullbar:&a&lCompleted!%&b]
+      &cto prestige from &7&l{{from}}&r&c to &e&l{{to}}&r&c!
+      &4&m+                                       +
+  commands:
+    - 'money set {{player}} 0'
+    - 'xp set {{player}} 0 levels'
+p7:
+  rank: 'VI'
+  next: 'VII'
+  from: 'Dragon'
+  to: 'Soul'
+  requirements:
+    - 'money 5000000000000'
+  prestige:
+    requirements-not-met: |-
+      &4&m+                                       +
+      &cYou need
+      &c- &d&l${{rank.requirement('money').total | money}} &c&l- &b[%progress_bar_{rankup_requirement_money_percent_done}_c:&d|_p:&d|_r:&3|_l:20_m:100_fullbar:&a&lCompleted!%&b]
+      &cto prestige from &7&l{{from}}&r&c to &e&l{{to}}&r&c!
+      &4&m+                                       +
+  commands:
+    - 'money set {{player}} 0'
+    - 'xp set {{player}} 0 levels'
+p8:
+  rank: 'VII'
+  next: 'VIII'
+  from: 'Dragon'
+  to: 'Soul'
+  requirements:
+    - 'money 50000000000000'
+  prestige:
+    requirements-not-met: |-
+      &4&m+                                       +
+      &cYou need
+      &c- &d&l${{rank.requirement('money').total | money}} &c&l- &b[%progress_bar_{rankup_requirement_money_percent_done}_c:&d|_p:&d|_r:&3|_l:20_m:100_fullbar:&a&lCompleted!%&b]
+      &cto prestige from &7&l{{from}}&r&c to &e&l{{to}}&r&c!
+      &4&m+                                       +
+  commands:
+    - 'money set {{player}} 0'
+    - 'xp set {{player}} 0 levels'
+p9:
+  rank: 'VIII'
+  next: 'IX'
+  from: 'Dragon'
+  to: 'Soul'
+  requirements:
+    - 'money 500000000000000'
+  prestige:
+    requirements-not-met: |-
+      &4&m+                                       +
+      &cYou need
+      &c- &d&l${{rank.requirement('money').total | money}} &c&l- &b[%progress_bar_{rankup_requirement_money_percent_done}_c:&d|_p:&d|_r:&3|_l:20_m:100_fullbar:&a&lCompleted!%&b]
+      &cto prestige from &7&l{{from}}&r&c to &e&l{{to}}&r&c!
+      &4&m+                                       +
+  commands:
+    - 'money set {{player}} 0'
+    - 'xp set {{player}} 0 levels'
+p10:
+  rank: 'IX'
+  next: 'X'
+  from: 'Dragon'
+  to: 'Soul'
+  requirements:
+    - 'money 5000000000000000'
+  prestige:
+    requirements-not-met: |-
+      &4&m+                                       +
+      &cYou need
+      &c- &d&l${{rank.requirement('money').total | money}} &c&l- &b[%progress_bar_{rankup_requirement_money_percent_done}_c:&d|_p:&d|_r:&3|_l:20_m:100_fullbar:&a&lCompleted!%&b]
+      &cto prestige from &7&l{{from}}&r&c to &e&l{{to}}&r&c!
+      &4&m+                                       +
+  commands:
+    - 'money set {{player}} 0'
+    - 'xp set {{player}} 0 levels'

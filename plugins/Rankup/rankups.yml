@@ -1,0 +1,1426 @@
+Soul:
+  rank: 'soul'
+  next: 'pixie'
+  display-name: 'Soul'
+  requirements:
+    default:
+      - 'item IRON_INGOT 16'
+      - 'xp-level 10'
+    I:
+      - 'item IRON_INGOT 32'
+      - 'xp-level 20'
+    II:
+      - 'item IRON_INGOT 48'
+      - 'xp-level 30'
+    III:
+      - 'item IRON_INGOT 64'
+      - 'xp-level 45'
+    IV:
+      - 'item IRON_INGOT 80'
+      - 'xp-level 60'
+    V:
+      - 'item IRON_INGOT 96'
+      - 'xp-level 75'
+    VI:
+      - 'item IRON_INGOT 112'
+      - 'xp-level 90'
+    VII:
+      - 'item IRON_INGOT 128'
+      - 'xp-level 105'
+    VIII:
+      - 'item IRON_INGOT 144'
+      - 'xp-level 120'
+    IX:
+      - 'item IRON_INGOT 160'
+      - 'xp-level 135'
+    X:
+      - 'item IRON_INGOT 176'
+      - 'xp-level 150'
+  rankup:
+    requirements-not-met: |-
+      &4&m+                                       +
+      &cYou need
+      &c- &d&l{{rank.requirement('item#IRON_INGOT').total | simple}} &3Iron ingots &c&l- &b[%progress_bar_{rankup_requirement_item_percent_done}_c:&d|_p:&d|_r:&3|_l:20_m:100_fullbar:&a&lCompleted!%&b]
+      &c- &d&l{{rank.requirement('xp-level').total | simple}} &3&3XP levels &c&l- &b[%progress_bar_{rankup_requirement_xp-level_percent_done}_c:&d|_p:&d|_r:&3|_l:20_m:100_fullbar:&a&lCompleted!%&b]
+      &cto rankup from &7&l{{rank.name}}&r&c to &e&l{{next.name}}&r&c!
+      &4&m+                                       +
+    gui:
+      rows: 4
+      title: "&3&lRanking up to &d&l{{next.name}}"
+      rankup:
+        material: GREEN_STAINED_GLASS_PANE
+        index: 10-12 19-21
+        name: '&a&lConfirm'
+        lore: |-
+          &8&l[&7Rankup to &b{{next.name}}&8&l]
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('xp-level').total | money}}&r&e &3XP levels.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+      cancel:
+        material: RED_STAINED_GLASS_PANE
+        index: 14-16 23-25
+        name: '&c&lCancel'
+        lore: |-
+          &cJust passing by!
+    ranksgui:
+      title: "Ranks"
+      rows: 4
+      offset: 10
+      width: 7
+      complete:
+        material: YELLOW_STAINED_GLASS_PANE
+        name: "&8&l[&b{{next.name}}&8&l]"
+        lore: |-
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('xp-level').total | money}}&r&e &3XP levels.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+        
+          &e&m    &a&l<&nCompleted!&a&l>&m    
+      current:
+        material: ORANGE_STAINED_GLASS_PANE
+        name: "&8&l[&7Rankup to &b{{next.name}}&8&l]"
+        lore: |-
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('xp-level').total | money}}&r&e &3XP levels.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+      incomplete:
+        material: RED_STAINED_GLASS_PANE
+        name: "&8&l[&b{{next.name}}&8&l]"
+        lore: |-
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('xp-level').total | money}}&r&e &3XP levels.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+        
+          &c&l&m                 
+          &c&l Rankup first!
+          &c&l&m                 
+  commands:
+    - 'adjustbonusclaimblocks {{player}} 800'
+    - 'execute at {{player}} run playsound minecraft:ui.toast.challenge_complete player {{player}} ~ ~ ~'
+    - 'execute at {{player}} run particle minecraft:firework ~ ~1 ~ 1 1 1 0 30 normal'
+    - 'title {{player}} subtitle {"text":"Congratulations!","bold":true,"color":"aqua"}'
+    - 'title {{player}} title {"text":"Ranked up!","bold":true,"color":"light_purple"}'
+Pixie:
+  rank: 'pixie'
+  next: 'fairy'
+  display-name: 'Pixie'
+  requirements:
+    default:
+      - 'item IRON_INGOT 32'
+      - 'xp-level 30'
+    I:
+      - 'item IRON_INGOT 64'
+      - 'xp-level 45'
+    II:
+      - 'item IRON_INGOT 96'
+      - 'xp-level 60'
+    III:
+      - 'item IRON_INGOT 128'
+      - 'xp-level 75'
+    IV:
+      - 'item IRON_INGOT 90'
+      - 'xp-level 150000'
+    V:
+      - 'item IRON_INGOT 105'
+      - 'xp-level 1500000'
+    VI:
+      - 'item IRON_INGOT 120'
+      - 'xp-level 15000000'
+    VII:
+      - 'item IRON_INGOT 135'
+      - 'xp-level 15000000'
+    VIII:
+      - 'item IRON_INGOT 150'
+      - 'xp-level 150000000'
+    IX:
+      - 'item IRON_INGOT 165'
+      - 'xp-level 1500000000'
+    X:
+      - 'item IRON_INGOT 180'
+      - 'xp-level 150000000000'
+  rankup:
+    requirements-not-met: |-
+      &4&m+                                       +
+      &cYou need
+      &c- &d&l{{rank.requirement('item#IRON_INGOT').total | simple}} &3Iron ingots &c&l- &b[%progress_bar_{rankup_requirement_item_percent_done}_c:&d|_p:&d|_r:&3|_l:20_m:100_fullbar:&a&lCompleted!%&b]
+      &c- &d&l{{rank.requirement('xp-level').total | simple}} &3&3XP levels &c&l- &b[%progress_bar_{rankup_requirement_xp-level_percent_done}_c:&d|_p:&d|_r:&3|_l:20_m:100_fullbar:&a&lCompleted!%&b]
+      &cto rankup from &7&l{{rank.name}}&r&c to &e&l{{next.name}}&r&c!
+      &4&m+                                       +
+    gui:
+      rows: 4
+      title: "&3&lRanking up to &d&l{{next.name}}"
+      rankup:
+        material: GREEN_STAINED_GLASS_PANE
+        index: 10-12 19-21
+        name: '&a&lConfirm'
+        lore: |-
+          &8&l[&7Rankup to &b{{next.name}}&8&l]
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('xp-level').total | money}}&r&e &3XP levels.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+      cancel:
+        material: RED_STAINED_GLASS_PANE
+        index: 14-16 23-25
+        name: '&c&lCancel'
+        lore: |-
+          &cJust passing by!
+    ranksgui:
+      title: "Ranks"
+      rows: 4
+      offset: 10
+      width: 7
+      complete:
+        material: YELLOW_STAINED_GLASS_PANE
+        name: "&8&l[&b{{next.name}}&8&l]"
+        lore: |-
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('xp-level').total | money}}&r&e &3XP levels.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+        
+          &e&m    &a&l<&nCompleted!&a&l>&m    
+      current:
+        material: ORANGE_STAINED_GLASS_PANE
+        name: "&8&l[&7Rankup to &b{{next.name}}&8&l]"
+        lore: |-
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('xp-level').total | money}}&r&e &3XP levels.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+      incomplete:
+        material: RED_STAINED_GLASS_PANE
+        name: "&8&l[&b{{next.name}}&8&l]"
+        lore: |-
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('xp-level').total | money}}&r&e &3XP levels.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+        
+          &c&l&m                 
+          &c&l Rankup first!
+          &c&l&m                 
+  commands:
+    - 'adjustbonusclaimblocks {{player}} 1300'
+    - 'execute at {{player}} run playsound minecraft:ui.toast.challenge_complete player {{player}} ~ ~ ~'
+    - 'execute at {{player}} run particle minecraft:firework ~ ~1 ~ 1 1 1 0 30 normal'
+    - 'title {{player}} subtitle {"text":"Congratulations!","bold":true,"color":"aqua"}'
+    - 'title {{player}} title {"text":"Ranked up!","bold":true,"color":"light_purple"}'
+Fairy:
+  rank: 'fairy'
+  next: 'gnome'
+  display-name: 'Fairy'
+  requirements:
+    default:
+      - 'item IRON_INGOT 64'
+      - 'xp-level 45'
+    I:
+      - 'item IRON_INGOT 128'
+      - 'xp-level 60'
+    II:
+      - 'item IRON_INGOT 192'
+      - 'xp-level 75'
+    III:
+      - 'item IRON_INGOT 256'
+      - 'xp-level 90'
+    IV:
+      - 'item IRON_INGOT 320'
+      - 'xp-level 105'
+    V:
+      - 'item IRON_INGOT 384'
+      - 'xp-level 120'
+    VI:
+      - 'item IRON_INGOT 448'
+      - 'xp-level 135'
+    VII:
+      - 'item IRON_INGOT 512'
+      - 'xp-level 150'
+    VIII:
+      - 'item IRON_INGOT 576'
+      - 'xp-level 165'
+    IX:
+      - 'item IRON_INGOT 640'
+      - 'xp-level 180'
+    X:
+      - 'item IRON_INGOT 704'
+      - 'xp-level 195'
+  rankup:
+    requirements-not-met: |-
+      &4&m+                                       +
+      &cYou need
+      &c- &d&l{{rank.requirement('item#IRON_INGOT').total | simple / 64 }} &3Stack(s) of iron ingots &c&l- &b[%progress_bar_{rankup_requirement_item_percent_done}_c:&d|_p:&d|_r:&3|_l:20_m:100_fullbar:&a&lCompleted!%&b]
+      &c- &d&l{{rank.requirement('xp-level').total | simple}} &3&3XP levels &c&l- &b[%progress_bar_{rankup_requirement_xp-level_percent_done}_c:&d|_p:&d|_r:&3|_l:20_m:100_fullbar:&a&lCompleted!%&b]
+      &cto rankup from &7&l{{rank.name}}&r&c to &e&l{{next.name}}&r&c!
+      &4&m+                                       +
+    gui:
+      rows: 4
+      title: "&3&lRanking up to &d&l{{next.name}}"
+      rankup:
+        material: GREEN_STAINED_GLASS_PANE
+        index: 10-12 19-21
+        name: '&a&lConfirm'
+        lore: |-
+          &8&l[&7Rankup to &b{{next.name}}&8&l]
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('xp-level').total | money}}&r&e &3XP levels.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+      cancel:
+        material: RED_STAINED_GLASS_PANE
+        index: 14-16 23-25
+        name: '&c&lCancel'
+        lore: |-
+          &cJust passing by!
+    ranksgui:
+      title: "Ranks"
+      rows: 4
+      offset: 10
+      width: 7
+      complete:
+        material: YELLOW_STAINED_GLASS_PANE
+        name: "&8&l[&b{{next.name}}&8&l]"
+        lore: |-
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('xp-level').total | money}}&r&e &3XP levels.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+        
+          &e&m    &a&l<&nCompleted!&a&l>&m    
+      current:
+        material: ORANGE_STAINED_GLASS_PANE
+        name: "&8&l[&7Rankup to &b{{next.name}}&8&l]"
+        lore: |-
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('xp-level').total | money}}&r&e &3XP levels.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+      incomplete:
+        material: RED_STAINED_GLASS_PANE
+        name: "&8&l[&b{{next.name}}&8&l]"
+        lore: |-
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('xp-level').total | money}}&r&e &3XP levels.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+        
+          &c&l&m                 
+          &c&l Rankup first!
+          &c&l&m                 
+  commands:
+    - 'adjustbonusclaimblocks {{player}} 2100'
+    - 'execute at {{player}} run playsound minecraft:ui.toast.challenge_complete player {{player}} ~ ~ ~'
+    - 'execute at {{player}} run particle minecraft:firework ~ ~1 ~ 1 1 1 0 30 normal'
+    - 'title {{player}} subtitle {"text":"Congratulations!","bold":true,"color":"aqua"}'
+    - 'title {{player}} title {"text":"Ranked up!","bold":true,"color":"light_purple"}'
+Gnome:
+  rank: 'gnome'
+  next: 'spirit'
+  display-name: 'Gnome'
+  requirements:
+    default:
+      - 'item GOLDEN_INGOT 16'
+      - 'xp-level 60'
+    I:
+      - 'item GOLDEN_INGOT 32'
+      - 'xp-level 75'
+    II:
+      - 'item GOLDEN_INGOT 48'
+      - 'xp-level 90'
+    III:
+      - 'item GOLDEN_INGOT 64'
+      - 'xp-level 105'
+    IV:
+      - 'item GOLDEN_INGOT 80'
+      - 'xp-level 120'
+    V:
+      - 'item GOLDEN_INGOT 96'
+      - 'xp-level 135'
+    VI:
+      - 'item GOLDEN_INGOT 112'
+      - 'xp-level 135'
+    VII:
+      - 'item GOLDEN_INGOT 128'
+      - 'xp-level 150'
+    VIII:
+      - 'item GOLDEN_INGOT 144'
+      - 'xp-level 165'
+    IX:
+      - 'item GOLDEN_INGOT 160'
+      - 'xp-level 180'
+    X:
+      - 'item GOLDEN_INGOT 176'
+      - 'xp-level 195'
+  rankup:
+    requirements-not-met: |-
+      &4&m+                                       +
+      &cYou need
+      &c- &d&l${{rank.requirement('money').total | money}} &c&l- &b[%progress_bar_{rankup_requirement_money_percent_done}_c:&d|_p:&d|_r:&3|_l:20_m:100_fullbar:&a&lCompleted!%&b]
+      &c- &d&l{{rank.requirement('xp-level').total | money}} &3XP levels &c&l- &b[%progress_bar_{rankup_requirement_xp-level_percent_done}_c:&d|_p:&d|_r:&3|_l:20_m:100_fullbar:&a&lCompleted!%&b]
+      &cto rankup from &7&l{{rank.name}}&r&c to &e&l{{next.name}}&r&c!
+      &4&m+                                       +
+    gui:
+      rows: 4
+      title: "&3&lRanking up to &d&l{{next.name}}"
+      rankup:
+        material: GREEN_STAINED_GLASS_PANE
+        index: 10-12 19-21
+        name: '&a&lConfirm'
+        lore: |-
+          &8&l[&7Rankup to &b{{next.name}}&8&l]
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('xp-level').total | money}}&r&e &3XP levels.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+      cancel:
+        material: RED_STAINED_GLASS_PANE
+        index: 14-16 23-25
+        name: '&c&lCancel'
+        lore: |-
+          &cJust passing by!
+    ranksgui:
+      title: "Ranks"
+      rows: 4
+      offset: 10
+      width: 7
+      complete:
+        material: YELLOW_STAINED_GLASS_PANE
+        name: "&8&l[&b{{next.name}}&8&l]"
+        lore: |-
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('xp-level').total | money}}&r&e &3XP levels.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+        
+          &e&m    &a&l<&nCompleted!&a&l>&m    
+      current:
+        material: ORANGE_STAINED_GLASS_PANE
+        name: "&8&l[&7Rankup to &b{{next.name}}&8&l]"
+        lore: |-
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('xp-level').total | money}}&r&e &3XP levels.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+      incomplete:
+        material: RED_STAINED_GLASS_PANE
+        name: "&8&l[&b{{next.name}}&8&l]"
+        lore: |-
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('xp-level').total | money}}&r&e &3XP levels.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+        
+          &c&l&m                 
+          &c&l Rankup first!
+          &c&l&m                 
+  commands:
+    - 'adjustbonusclaimblocks {{player}} 3400'
+    - 'execute at {{player}} run playsound minecraft:ui.toast.challenge_complete player {{player}} ~ ~ ~'
+    - 'execute at {{player}} run particle minecraft:firework ~ ~1 ~ 1 1 1 0 30 normal'
+    - 'title {{player}} subtitle {"text":"Congratulations!","bold":true,"color":"aqua"}'
+    - 'title {{player}} title {"text":"Ranked up!","bold":true,"color":"light_purple"}'
+spirit:
+  rank: 'spirit'
+  next: 'nymph'
+  display-name: 'Spirit'
+  requirements:
+    default:
+      - 'money 40000'
+      - 'xp-level 40'
+    I:
+      - 'money 400000'
+      - 'xp-level 400'
+    II:
+      - 'money 4000000'
+      - 'xp-level 4000'
+    III:
+      - 'money 40000000'
+      - 'xp-level 40000'
+    IV:
+      - 'money 400000000'
+      - 'xp-level 400000'
+    V:
+      - 'money 4000000000'
+      - 'xp-level 4000000'
+    VI:
+      - 'money 40000000000'
+      - 'xp-level 40000000'
+    VII:
+      - 'money 400000000000'
+      - 'xp-level 400000000'
+    VIII:
+      - 'money 4000000000000'
+      - 'xp-level 4000000000'
+    IX:
+      - 'money 40000000000000'
+      - 'xp-level 40000000000'
+    X:
+      - 'money 400000000000000'
+      - 'xp-level 400000000000'
+  rankup:
+    requirements-not-met: |-
+      &4&m+                                       +
+      &cYou need
+      &c- &d&l${{rank.requirement('money').total | money}} &c&l- &b[%progress_bar_{rankup_requirement_money_percent_done}_c:&d|_p:&d|_r:&3|_l:20_m:100_fullbar:&a&lCompleted!%&b]
+      &c- &d&l{{rank.requirement('xp-level').total | money}} &3XP levels &c&l- &b[%progress_bar_{rankup_requirement_xp-level_percent_done}_c:&d|_p:&d|_r:&3|_l:20_m:100_fullbar:&a&lCompleted!%&b]
+      &cto rankup from &7&l{{rank.name}}&r&c to &e&l{{next.name}}&r&c!
+      &4&m+                                       +
+    gui:
+      rows: 4
+      title: "&3&lRanking up to &d&l{{next.name}}"
+      rankup:
+        material: GREEN_STAINED_GLASS_PANE
+        index: 10-12 19-21
+        name: '&a&lConfirm'
+        lore: |-
+          &8&l[&7Rankup to &b{{next.name}}&8&l]
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('xp-level').total | money}}&r&e &3XP levels.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+      cancel:
+        material: RED_STAINED_GLASS_PANE
+        index: 14-16 23-25
+        name: '&c&lCancel'
+        lore: |-
+          &cJust passing by!
+    ranksgui:
+      title: "Ranks"
+      rows: 4
+      offset: 10
+      width: 7
+      complete:
+        material: YELLOW_STAINED_GLASS_PANE
+        name: "&8&l[&b{{next.name}}&8&l]"
+        lore: |-
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('xp-level').total | money}}&r&e &3XP levels.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+        
+          &e&m    &a&l<&nCompleted!&a&l>&m    
+      current:
+        material: ORANGE_STAINED_GLASS_PANE
+        name: "&8&l[&7Rankup to &b{{next.name}}&8&l]"
+        lore:
+      incomplete:
+        material: RED_STAINED_GLASS_PANE
+        name: "&8&l[&b{{next.name}}&8&l]"
+        lore: |-
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('xp-level').total | money}}&r&e &3XP levels.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+        
+          &c&l&m                 
+          &c&l Rankup first!
+          &c&l&m                 
+  commands:
+    - 'adjustbonusclaimblocks {{player}} 5500'
+    - 'execute at {{player}} run playsound minecraft:ui.toast.challenge_complete player {{player}} ~ ~ ~'
+    - 'execute at {{player}} run particle minecraft:firework ~ ~1 ~ 1 1 1 0 30 normal'
+    - 'title {{player}} subtitle {"text":"Congratulations!","bold":true,"color":"aqua"}'
+    - 'title {{player}} title {"text":"Ranked up!","bold":true,"color":"light_purple"}'
+Nymph:
+  rank: 'nymph'
+  next: 'lamia'
+  display-name: 'Nymph'
+  requirements:
+    default:
+      - 'money 65000'
+      - 'xp-level 65'
+    I:
+      - 'money 650000'
+      - 'xp-level 650'
+    II:
+      - 'money 6500000'
+      - 'xp-level 6500'
+    III:
+      - 'money 65000000'
+      - 'xp-level 65000'
+    IV:
+      - 'money 650000000'
+      - 'xp-level 650000'
+    V:
+      - 'money 6500000000'
+      - 'xp-level 6500000'
+    VI:
+      - 'money 65000000000'
+      - 'xp-level 65000000'
+    VII:
+      - 'money 650000000000'
+      - 'xp-level 650000000'
+    VIII:
+      - 'money 6500000000000'
+      - 'xp-level 6500000000'
+    IX:
+      - 'money 65000000000000'
+      - 'xp-level 65000000000'
+    X:
+      - 'money 650000000000000'
+      - 'xp-level 650000000000'
+  rankup:
+    requirements-not-met: |-
+      &4&m+                                       +
+      &cYou need
+      &c- &d&l${{rank.requirement('money').total | money}} &c&l- &b[%progress_bar_{rankup_requirement_money_percent_done}_c:&d|_p:&d|_r:&3|_l:20_m:100_fullbar:&a&lCompleted!%&b]
+      &c- &d&l{{rank.requirement('xp-level').total | money}} &3XP levels &c&l- &b[%progress_bar_{rankup_requirement_xp-level_percent_done}_c:&d|_p:&d|_r:&3|_l:20_m:100_fullbar:&a&lCompleted!%&b]
+      &cto rankup from &7&l{{rank.name}}&r&c to &e&l{{next.name}}&r&c!
+      &4&m+                                       +
+    gui:
+      rows: 4
+      title: "&3&lRanking up to &d&l{{next.name}}"
+      rankup:
+        material: GREEN_STAINED_GLASS_PANE
+        index: 10-12 19-21
+        name: '&a&lConfirm'
+        lore: |-
+          &8&l[&7Rankup to &b{{next.name}}&8&l]
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('xp-level').total | money}}&r&e &3XP levels.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+      cancel:
+        material: RED_STAINED_GLASS_PANE
+        index: 14-16 23-25
+        name: '&c&lCancel'
+        lore: |-
+          &cJust passing by!
+    ranksgui:
+      title: "Ranks"
+      rows: 4
+      offset: 10
+      width: 7
+      complete:
+        material: YELLOW_STAINED_GLASS_PANE
+        name: "&8&l[&b{{next.name}}&8&l]"
+        lore: |-
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('xp-level').total | money}}&r&e &3XP levels.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+        
+          &e&m    &a&l<&nCompleted!&a&l>&m    
+      current:
+        material: ORANGE_STAINED_GLASS_PANE
+        name: "&8&l[&7Rankup to &b{{next.name}}&8&l]"
+        lore: |-
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('xp-level').total | money}}&r&e &3XP levels.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+      incomplete:
+        material: RED_STAINED_GLASS_PANE
+        name: "&8&l[&b{{next.name}}&8&l]"
+        lore: |-
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('xp-level').total | money}}&r&e &3XP levels.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+        
+          &c&l&m                 
+          &c&l Rankup first!
+          &c&l&m                 
+  commands:
+    - 'adjustbonusclaimblocks {{player}} 8900'
+    - 'execute at {{player}} run playsound minecraft:ui.toast.challenge_complete player {{player}} ~ ~ ~'
+    - 'execute at {{player}} run particle minecraft:firework ~ ~1 ~ 1 1 1 0 30 normal'
+    - 'title {{player}} subtitle {"text":"Congratulations!","bold":true,"color":"aqua"}'
+    - 'title {{player}} title {"text":"Ranked up!","bold":true,"color":"light_purple"}'
+Lamia:
+  rank: 'lamia'
+  next: 'unicorn'
+  display-name: 'Lamia'
+  requirements:
+    default:
+      - 'money 105000'
+      - 'xp-level 100'
+    I:
+      - 'money 1050000'
+      - 'xp-level 1000'
+    II:
+      - 'money 10500000'
+      - 'xp-level 10000'
+    III:
+      - 'money 105000000'
+      - 'xp-level 100000'
+    IV:
+      - 'money 1050000000'
+      - 'xp-level 1000000'
+    V:
+      - 'money 10500000000'
+      - 'xp-level 10000000'
+    VI:
+      - 'money 105000000000'
+      - 'xp-level 100000000'
+    VII:
+      - 'money 1050000000000'
+      - 'xp-level 1000000000'
+    VIII:
+      - 'money 10500000000000'
+      - 'xp-level 10000000000'
+    IX:
+      - 'money 105000000000000'
+      - 'xp-level 100000000000'
+    X:
+      - 'money 1050000000000000'
+      - 'xp-level 1000000000000'
+  rankup:
+    requirements-not-met: |-
+      &4&m+                                       +
+      &cYou need
+      &c- &d&l${{rank.requirement('money').total | money}} &c&l- &b[%progress_bar_{rankup_requirement_money_percent_done}_c:&d|_p:&d|_r:&3|_l:20_m:100_fullbar:&a&lCompleted!%&b]
+      &c- &d&l{{rank.requirement('xp-level').total | money}} &3XP levels &c&l- &b[%progress_bar_{rankup_requirement_xp-level_percent_done}_c:&d|_p:&d|_r:&3|_l:20_m:100_fullbar:&a&lCompleted!%&b]
+      &cto rankup from &7&l{{rank.name}}&r&c to &e&l{{next.name}}&r&c!
+      &4&m+                                       +
+    gui:
+      rows: 4
+      title: "&3&lRanking up to &d&l{{next.name}}"
+      rankup:
+        material: GREEN_STAINED_GLASS_PANE
+        index: 10-12 19-21
+        name: '&a&lConfirm'
+        lore: |-
+          &8&l[&7Rankup to &b{{next.name}}&8&l]
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('xp-level').total | money}}&r&e &3XP levels.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+      cancel:
+        material: RED_STAINED_GLASS_PANE
+        index: 14-16 23-25
+        name: '&c&lCancel'
+        lore: |-
+          &cJust passing by!
+    ranksgui:
+      title: "Ranks"
+      rows: 4
+      offset: 10
+      width: 7
+      complete:
+        material: YELLOW_STAINED_GLASS_PANE
+        name: "&8&l[&b{{next.name}}&8&l]"
+        lore: |-
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('xp-level').total | money}}&r&e &3XP levels.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+        
+          &e&m    &a&l<&nCompleted!&a&l>&m    
+      current:
+        material: ORANGE_STAINED_GLASS_PANE
+        name: "&8&l[&7Rankup to &b{{next.name}}&8&l]"
+        lore: |-
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('xp-level').total | money}}&r&e &3XP levels.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+      incomplete:
+        material: RED_STAINED_GLASS_PANE
+        name: "&8&l[&b{{next.name}}&8&l]"
+        lore: |-
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('xp-level').total | money}}&r&e &3XP levels.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+        
+          &c&l&m                 
+          &c&l Rankup first!
+          &c&l&m                 
+  commands:
+    - 'adjustbonusclaimblocks {{player}} 14400'
+    - 'execute at {{player}} run playsound minecraft:ui.toast.challenge_complete player {{player}} ~ ~ ~'
+    - 'execute at {{player}} run particle minecraft:firework ~ ~1 ~ 1 1 1 0 30 normal'
+    - 'title {{player}} subtitle {"text":"Congratulations!","bold":true,"color":"aqua"}'
+    - 'title {{player}} title {"text":"Ranked up!","bold":true,"color":"light_purple"}'
+Unicorn:
+  rank: 'unicorn'
+  next: 'pegasus'
+  display-name: 'Unicorn'
+  requirements:
+    default:
+      - 'money 170000'
+      - 'total-mob-kills 1000'
+    I:
+      - 'money 1700000'
+      - 'total-mob-kills 10000'
+    II:
+      - 'money 17000000'
+      - 'total-mob-kills 100000'
+    III:
+      - 'money 170000000'
+      - 'total-mob-kills 1000000'
+    IV:
+      - 'money 1700000000'
+      - 'total-mob-kills 10000000'
+    V:
+      - 'money 17000000000'
+      - 'total-mob-kills 100000000'
+    VI:
+      - 'money 170000000000'
+      - 'total-mob-kills 1000000000'
+    VII:
+      - 'money 1700000000000'
+      - 'total-mob-kills 10000000000'
+    VIII:
+      - 'money 17000000000000'
+      - 'total-mob-kills 100000000000'
+    IX:
+      - 'money 170000000000000'
+      - 'total-mob-kills 1000000000000'
+    X:
+      - 'money 1700000000000000'
+      - 'total-mob-kills 10000000000000'
+  rankup:
+    requirements-not-met: |-
+      &4&m+                                       +
+      &cYou need
+      &c- &d&l${{rank.requirement('money').total | money}} &c&l- &b[%progress_bar_{rankup_requirement_money_percent_done}_c:&d|_p:&d|_r:&3|_l:20_m:100_fullbar:&a&lCompleted!%&b]
+      &c- &d&l{{rank.requirement('total-mob-kills').total | money}} mob kills &c&l- &b[%progress_bar_{rankup_requirement_total-mob-kills_percent_done}_c:&d|_p:&d|_r:&3|_l:20_m:100_fullbar:&a&lCompleted!%&b]
+      &cto rankup from &7&l{{rank.name}}&r&c to &e&l{{next.name}}&r&c!
+      &4&m+                                       +
+    gui:
+      rows: 4
+      title: "&3&lRanking up to &d&l{{next.name}}"
+      rankup:
+        material: GREEN_STAINED_GLASS_PANE
+        index: 10-12 19-21
+        name: '&a&lConfirm'
+        lore: |-
+          &8&l[&7Rankup to &b{{next.name}}&8&l]
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('total-mob-kills').total | money}} mob kills.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+      cancel:
+        material: RED_STAINED_GLASS_PANE
+        index: 14-16 23-25
+        name: '&c&lCancel'
+        lore: |-
+          &cJust passing by!
+    ranksgui:
+      title: "Ranks"
+      rows: 4
+      offset: 10
+      width: 7
+      complete:
+        material: YELLOW_STAINED_GLASS_PANE
+        name: "&8&l[&b{{next.name}}&8&l]"
+        lore: |-
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('total-mob-kills').total | money}} mob kills.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+        
+          &e&m    &a&l<&nCompleted!&a&l>&m    
+      current:
+        material: ORANGE_STAINED_GLASS_PANE
+        name: "&8&l[&7Rankup to &b{{next.name}}&8&l]"
+        lore: |-
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('total-mob-kills').total | money}} mob kills.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+      incomplete:
+        material: RED_STAINED_GLASS_PANE
+        name: "&8&l[&b{{next.name}}&8&l]"
+        lore: |-
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('total-mob-kills').total | money}} mob kills.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+        
+          &c&l&m                 
+          &c&l Rankup first!
+          &c&l&m                 
+  commands:
+    - 'adjustbonusclaimblocks {{player}} 23300'
+    - 'execute at {{player}} run playsound minecraft:ui.toast.challenge_complete player {{player}} ~ ~ ~'
+    - 'execute at {{player}} run particle minecraft:firework ~ ~1 ~ 1 1 1 0 30 normal'
+    - 'title {{player}} subtitle {"text":"Congratulations!","bold":true,"color":"aqua"}'
+    - 'title {{player}} title {"text":"Ranked up!","bold":true,"color":"light_purple"}'
+pegasus:
+  rank: 'pegasus'
+  next: 'chimera'
+  display-name: 'Pegasus'
+  requirements:
+    default:
+      - 'money 275000'
+      - 'total-mob-kills 5000'
+    I:
+      - 'money 2750000'
+      - 'total-mob-kills 50000'
+    II:
+      - 'money 27500000'
+      - 'total-mob-kills 500000'
+    III:
+      - 'money 275000000'
+      - 'total-mob-kills 5000000'
+    IV:
+      - 'money 2750000000'
+      - 'total-mob-kills 50000000'
+    V:
+      - 'money 27500000000'
+      - 'total-mob-kills 500000000'
+    VI:
+      - 'money 275000000000'
+      - 'total-mob-kills 5000000000'
+    VII:
+      - 'money 2750000000000'
+      - 'total-mob-kills 50000000000'
+    VIII:
+      - 'money 27500000000000'
+      - 'total-mob-kills 500000000000'
+    IX:
+      - 'money 275000000000000'
+      - 'total-mob-kills 5000000000000'
+    X:
+      - 'money 2750000000000000'
+      - 'total-mob-kills 50000000000000'
+  rankup:
+    requirements-not-met: |-
+      &4&m+                                       +
+      &cYou need
+      &c- &d&l${{rank.requirement('money').total | money}} &c&l- &b[%progress_bar_{rankup_requirement_money_percent_done}_c:&d|_p:&d|_r:&3|_l:20_m:100_fullbar:&a&lCompleted!%&b]
+      &c- &d&l{{rank.requirement('total-mob-kills').total | money}} mob kills &c&l- &b[%progress_bar_{rankup_requirement_total-mob-kills_percent_done}_c:&d|_p:&d|_r:&3|_l:20_m:100_fullbar:&a&lCompleted!%&b]
+      &cto rankup from &7&l{{rank.name}}&r&c to &e&l{{next.name}}&r&c!
+      &4&m+                                       +
+    gui:
+      rows: 4
+      title: "&3&lRanking up to &d&l{{next.name}}"
+      rankup:
+        material: GREEN_STAINED_GLASS_PANE
+        index: 10-12 19-21
+        name: '&a&lConfirm'
+        lore: |-
+          &8&l[&7Rankup to &b{{next.name}}&8&l]
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('total-mob-kills').total | money}} mob kills.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+      cancel:
+        material: RED_STAINED_GLASS_PANE
+        index: 14-16 23-25
+        name: '&c&lCancel'
+        lore: |-
+          &cJust passing by!
+    ranksgui:
+      title: "Ranks"
+      rows: 4
+      offset: 10
+      width: 7
+      complete:
+        material: YELLOW_STAINED_GLASS_PANE
+        name: "&8&l[&b{{next.name}}&8&l]"
+        lore: |-
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('total-mob-kills').total | money}} mob kills.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+        
+          &e&m    &a&l<&nCompleted!&a&l>&m    
+      current:
+        material: ORANGE_STAINED_GLASS_PANE
+        name: "&8&l[&7Rankup to &b{{next.name}}&8&l]"
+        lore: |-
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('total-mob-kills').total | money}} mob kills.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+      incomplete:
+        material: RED_STAINED_GLASS_PANE
+        name: "&8&l[&b{{next.name}}&8&l]"
+        lore: |-
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('total-mob-kills').total | money}} mob kills.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+        
+          &c&l&m                 
+          &c&l Rankup first!
+          &c&l&m                 
+  commands:
+    - 'adjustbonusclaimblocks {{player}} 37700'
+    - 'execute at {{player}} run playsound minecraft:ui.toast.challenge_complete player {{player}} ~ ~ ~'
+    - 'execute at {{player}} run particle minecraft:firework ~ ~1 ~ 1 1 1 0 30 normal'
+    - 'title {{player}} subtitle {"text":"Congratulations!","bold":true,"color":"aqua"}'
+    - 'title {{player}} title {"text":"Ranked up!","bold":true,"color":"light_purple"}'
+chimera:
+  rank: 'chimera'
+  next: 'minotaur'
+  display-name: 'Chimera'
+  requirements:
+    default:
+      - 'money 445000'
+      - 'total-mob-kills 7000'
+    I:
+      - 'money 4450000'
+      - 'total-mob-kills 70000'
+    II:
+      - 'money 44500000'
+      - 'total-mob-kills 700000'
+    III:
+      - 'money 445000000'
+      - 'total-mob-kills 7000000'
+    IV:
+      - 'money 4450000000'
+      - 'total-mob-kills 70000000'
+    V:
+      - 'money 44500000000'
+      - 'total-mob-kills 700000000'
+    VI:
+      - 'money 445000000000'
+      - 'total-mob-kills 7000000000'
+    VII:
+      - 'money 4450000000000'
+      - 'total-mob-kills 70000000000'
+    VIII:
+      - 'money 44500000000000'
+      - 'total-mob-kills 700000000000'
+    IX:
+      - 'money 445000000000000'
+      - 'total-mob-kills 7000000000000'
+    X:
+      - 'money 4450000000000000'
+      - 'total-mob-kills 70000000000000'
+  rankup:
+    requirements-not-met: |-
+      &4&m+                                       +
+      &cYou need
+      &c- &d&l${{rank.requirement('money').total | money}} &c&l- &b[%progress_bar_{rankup_requirement_money_percent_done}_c:&d|_p:&d|_r:&3|_l:20_m:100_fullbar:&a&lCompleted!%&b]
+      &c- &d&l{{rank.requirement('total-mob-kills').total | money}} mob kills &c&l- &b[%progress_bar_{rankup_requirement_total-mob-kills_percent_done}_c:&d|_p:&d|_r:&3|_l:20_m:100_fullbar:&a&lCompleted!%&b]
+      &cto rankup from &7&l{{rank.name}}&r&c to &e&l{{next.name}}&r&c!
+      &4&m+                                       +
+    gui:
+      rows: 4
+      title: "&3&lRanking up to &d&l{{next.name}}"
+      rankup:
+        material: GREEN_STAINED_GLASS_PANE
+        index: 10-12 19-21
+        name: '&a&lConfirm'
+        lore: |-
+          &8&l[&7Rankup to &b{{next.name}}&8&l]
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('total-mob-kills').total | money}} mob kills.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+      cancel:
+        material: RED_STAINED_GLASS_PANE
+        index: 14-16 23-25
+        name: '&c&lCancel'
+        lore: |-
+          &cJust passing by!
+    ranksgui:
+      title: "Ranks"
+      rows: 4
+      offset: 10
+      width: 7
+      complete:
+        material: YELLOW_STAINED_GLASS_PANE
+        name: "&8&l[&b{{next.name}}&8&l]"
+        lore: |-
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('total-mob-kills').total | money}} mob kills.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+        
+          &e&m    &a&l<&nCompleted!&a&l>&m    
+      current:
+        material: ORANGE_STAINED_GLASS_PANE
+        name: "&8&l[&7Rankup to &b{{next.name}}&8&l]"
+        lore: |-
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('total-mob-kills').total | money}} mob kills.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+      incomplete:
+        material: RED_STAINED_GLASS_PANE
+        name: "&8&l[&b{{next.name}}&8&l]"
+        lore: |-
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('total-mob-kills').total | money}} mob kills.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+        
+          &c&l&m                 
+          &c&l Rankup first!
+          &c&l&m                 
+  commands:
+    - 'adjustbonusclaimblocks {{player}} 61000'
+    - 'execute at {{player}} run playsound minecraft:ui.toast.challenge_complete player {{player}} ~ ~ ~'
+    - 'execute at {{player}} run particle minecraft:firework ~ ~1 ~ 1 1 1 0 30 normal'
+    - 'title {{player}} subtitle {"text":"Congratulations!","bold":true,"color":"aqua"}'
+    - 'title {{player}} title {"text":"Ranked up!","bold":true,"color":"light_purple"}'
+minotaur:
+  rank: 'minotaur'
+  next: 'centaur'
+  display-name: 'Minotaur'
+  requirements:
+    default:
+      - 'total-mob-kills 12000'
+      - 'money 720000'
+    I:
+      - 'total-mob-kills 120000'
+      - 'money 7200000'
+    II:
+      - 'total-mob-kills 1200000'
+      - 'money 72000000'
+    III:
+      - 'total-mob-kills 12000000'
+      - 'money 720000000'
+    IV:
+      - 'total-mob-kills 120000000'
+      - 'money 7200000000'
+    V:
+      - 'total-mob-kills 1200000000'
+      - 'money 72000000000'
+    VI:
+      - 'total-mob-kills 12000000000'
+      - 'money 720000000000'
+    VII:
+      - 'total-mob-kills 120000000000'
+      - 'money 7200000000000'
+    VIII:
+      - 'total-mob-kills 1200000000000'
+      - 'money 72000000000000'
+    IX:
+      - 'total-mob-kills 12000000000000'
+      - 'money 720000000000000'
+    X:
+      - 'total-mob-kills 120000000000000'
+      - 'money 7200000000000000'
+  rankup:
+    requirements-not-met: |-
+      &4&m+                                       +
+      &cYou need
+      &c- &d&l${{rank.requirement('money').total | money}} &c&l- &b[%progress_bar_{rankup_requirement_money_percent_done}_c:&d|_p:&d|_r:&3|_l:20_m:100_fullbar:&a&lCompleted!%&b]
+      &c- &d&l{{rank.requirement('total-mob-kills').total | money}} mob kills &c&l- &b[%progress_bar_{rankup_requirement_total-mob-kills_percent_done}_c:&d|_p:&d|_r:&3|_l:20_m:100_fullbar:&a&lCompleted!%&b]
+      &cto rankup from &7&l{{rank.name}}&r&c to &e&l{{next.name}}&r&c!
+      &4&m+                                       +
+    gui:
+      rows: 4
+      title: "&3&lRanking up to &d&l{{next.name}}"
+      rankup:
+        material: GREEN_STAINED_GLASS_PANE
+        index: 10-12 19-21
+        name: '&a&lConfirm'
+        lore: |-
+          &8&l[&7Rankup to &b{{next.name}}&8&l]
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('total-mob-kills').total | money}} mob kills.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+      cancel:
+        material: RED_STAINED_GLASS_PANE
+        index: 14-16 23-25
+        name: '&c&lCancel'
+        lore: |-
+          &cJust passing by!
+    ranksgui:
+      title: "Ranks"
+      rows: 4
+      offset: 10
+      width: 7
+      complete:
+        material: YELLOW_STAINED_GLASS_PANE
+        name: "&8&l[&b{{next.name}}&8&l]"
+        lore: |-
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('total-mob-kills').total | money}} mob kills.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+        
+          &e&m    &a&l<&nCompleted!&a&l>&m    
+      current:
+        material: ORANGE_STAINED_GLASS_PANE
+        name: "&8&l[&7Rankup to &b{{next.name}}&8&l]"
+        lore: |-
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('total-mob-kills').total | money}} mob kills.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+      incomplete:
+        material: RED_STAINED_GLASS_PANE
+        name: "&8&l[&b{{next.name}}&8&l]"
+        lore: |-
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('total-mob-kills').total | money}} mob kills.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+        
+          &c&l&m                 
+          &c&l Rankup first!
+          &c&l&m                 
+  commands:
+    - 'adjustbonusclaimblocks {{player}} 98700'
+    - 'execute at {{player}} run playsound minecraft:ui.toast.challenge_complete player {{player}} ~ ~ ~'
+    - 'execute at {{player}} run particle minecraft:firework ~ ~1 ~ 1 1 1 0 30 normal'
+    - 'title {{player}} subtitle {"text":"Congratulations!","bold":true,"color":"aqua"}'
+    - 'title {{player}} title {"text":"Ranked up!","bold":true,"color":"light_purple"}'
+centaur:
+  rank: 'centaur'
+  next: 'sphinx'
+  display-name: 'Centaur'
+  requirements:
+    default:
+      - 'money 1165000'
+      - 'total-mob-kills 19000'
+    I:
+      - 'money 11650000'
+      - 'total-mob-kills 190000'
+    II:
+      - 'money 116500000'
+      - 'total-mob-kills 1900000'
+    III:
+      - 'money 1165000000'
+      - 'total-mob-kills 19000000'
+    IV:
+      - 'money 11650000000'
+      - 'total-mob-kills 190000000'
+    V:
+      - 'money 116500000000'
+      - 'total-mob-kills 1900000000'
+    VI:
+      - 'money 1165000000000'
+      - 'total-mob-kills 19000000000'
+    VII:
+      - 'money 11650000000000'
+      - 'total-mob-kills 190000000000'
+    VIII:
+      - 'money 116500000000000'
+      - 'total-mob-kills 1900000000000'
+    IX:
+      - 'money 1165000000000000'
+      - 'total-mob-kills 19000000000000'
+    X:
+      - 'money 11650000000000000'
+      - 'total-mob-kills 190000000000000'
+  rankup:
+    requirements-not-met: |-
+      &4&m+                                       +
+      &cYou need
+      &c- &d&l${{rank.requirement('money').total | money}} &c&l- &b[%progress_bar_{rankup_requirement_money_percent_done}_c:&d|_p:&d|_r:&3|_l:20_m:100_fullbar:&a&lCompleted!%&b]
+      &c- &d&l{{rank.requirement('total-mob-kills').total | money}} mob kills &c&l- &b[%progress_bar_{rankup_requirement_total-mob-kills_percent_done}_c:&d|_p:&d|_r:&3|_l:20_m:100_fullbar:&a&lCompleted!%&b]
+      &cto rankup from &7&l{{rank.name}}&r&c to &e&l{{next.name}}&r&c!
+      &4&m+                                       +
+    gui:
+      rows: 4
+      title: "&3&lRanking up to &d&l{{next.name}}"
+      rankup:
+        material: GREEN_STAINED_GLASS_PANE
+        index: 10-12 19-21
+        name: '&a&lConfirm'
+        lore: |-
+          &8&l[&7Rankup to &b{{next.name}}&8&l]
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('total-mob-kills').total | money}} mob kills.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+      cancel:
+        material: RED_STAINED_GLASS_PANE
+        index: 14-16 23-25
+        name: '&c&lCancel'
+        lore: |-
+          &cJust passing by!
+    ranksgui:
+      title: "Ranks"
+      rows: 4
+      offset: 10
+      width: 7
+      complete:
+        material: YELLOW_STAINED_GLASS_PANE
+        name: "&8&l[&b{{next.name}}&8&l]"
+        lore: |-
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('total-mob-kills').total | money}} mob kills.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+        
+          &e&m    &a&l<&nCompleted!&a&l>&m    
+      current:
+        material: ORANGE_STAINED_GLASS_PANE
+        name: "&8&l[&7Rankup to &b{{next.name}}&8&l]"
+        lore: |-
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('total-mob-kills').total | money}} mob kills.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+      incomplete:
+        material: RED_STAINED_GLASS_PANE
+        name: "&8&l[&b{{next.name}}&8&l]"
+        lore: |-
+          &8&m       &a&l<Costs>&8&m       
+          &8- &d&l{{rank.requirement('total-mob-kills').total | money}} mob kills.
+          &8- &d&l${{rank.requirement('money').total | money}}.
+        
+          &c&l&m                 
+          &c&l Rankup first!
+          &c&l&m                 
+  commands:
+    - 'adjustbonusclaimblocks {{player}} 159700'
+    - 'execute at {{player}} run playsound minecraft:ui.toast.challenge_complete player {{player}} ~ ~ ~'
+    - 'execute at {{player}} run particle minecraft:firework ~ ~1 ~ 1 1 1 0 30 normal'
+    - 'title {{player}} subtitle {"text":"Congratulations!","bold":true,"color":"aqua"}'
+    - 'title {{player}} title {"text":"Ranked up!","bold":true,"color":"light_purple"}'
+sphinx:
+  rank: 'sphinx'
+  next: 'wyvern'
+  display-name: 'Sphinx'
+  requirements:
+    default:
+      - 'money 1885000'
+      - 'mob-kills wither 1'
+    I:
+      - 'money 18850000'
+      - 'mob-kills wither 2'
+    II:
+      - 'money 188500000'
+      - 'mob-kills wither 3'
+    III:
+      - 'money 1885000000'
+      - 'mob-kills wither 4'
+    IV:
+      - 'money 18850000000'
+      - 'mob-kills wither 5'
+    V:
+      - 'money 188500000000'
+      - 'mob-kills wither 6'
+    VI:
+      - 'money 1885000000000'
+      - 'mob-kills wither 7'
+    VII:
+      - 'money 18850000000000'
+      - 'mob-kills wither 8'
+    VIII:
+      - 'money 188500000000000'
+      - 'mob-kills wither 9'
+    IX:
+      - 'money 1885000000000000'
+      - 'mob-kills wither 10'
+    X:
+      - 'money 18850000000000000'
+      - 'mob-kills wither 11'
+  rankup:
+    requirements-not-met: |-
+      &4&m+                                       +
+      &cYou need
+      &c- &d&l${{rank.requirement('money').total | money}} &c&l- &b[%progress_bar_{rankup_requirement_money_percent_done}_c:&d|_p:&d|_r:&3|_l:20_m:100_fullbar:&a&lCompleted!%&b]
+      &c- &d&l{{rank.requirement('mob-kills#WITHER').total | simple}} Wither kill(s) &c&l- &b[%progress_bar_{PERCENT_DONE mob-kills#wither}_c:&d|_p:&d|_r:&3|_l:20_m:100_fullbar:&a&lCompleted!%&b]
+      &cto rankup from &7&l{{rank.name}}&r&c to &e&l{{next.name}}&r&c!
+      &4&m+                                       +
+    gui:
+      rows: 4
+      title: "&3&lRanking up to &d&l{{next.name}}"
+      rankup:
+        material: GREEN_STAINED_GLASS_PANE
+        index: 10-12 19-21
+        name: '&a&lConfirm'
+        lore: |-
+          &8&l[&7Rankup to &b{{next.name}}&8&l]
+          &8&m       &a&l<Costs>&8&m       
+          &8- &8&l{{rank.requirement('mob-kills#WITHER').total | simple}} Wither kill(s)
+          &8- &d&l${{rank.requirement('money').total | money}}.
+      cancel:
+        material: RED_STAINED_GLASS_PANE
+        index: 14-16 23-25
+        name: '&c&lCancel'
+        lore: |-
+          &cJust passing by!
+    ranksgui:
+      title: "Ranks"
+      rows: 4
+      offset: 10
+      width: 7
+      complete:
+        material: YELLOW_STAINED_GLASS_PANE
+        name: "&8&l[&b{{next.name}}&8&l]"
+        lore: |-
+          &8&m       &a&l<Costs>&8&m       
+          &8- &8&l{{rank.requirement('mob-kills#WITHER').total | simple}} Wither kill(s)
+          &8- &d&l${{rank.requirement('money').total | money}}.
+        
+          &e&m    &a&l<&nCompleted!&a&l>&m    
+      current:
+        material: ORANGE_STAINED_GLASS_PANE
+        name: "&8&l[&7Rankup to &b{{next.name}}&8&l]"
+        lore: |-
+          &8&m       &a&l<Costs>&8&m       
+          &8- &8&l{{rank.requirement('mob-kills#WITHER').total | simple}} Wither kill(s)
+          &8- &d&l${{rank.requirement('money').total | money}}.
+      incomplete:
+        material: RED_STAINED_GLASS_PANE
+        name: "&8&l[&b{{next.name}}&8&l]"
+        lore: |-
+          &8&m       &a&l<Costs>&8&m       
+          &8- &8&l{{rank.requirement('mob-kills#WITHER').total | simple}} Wither kill(s)
+          &8- &d&l${{rank.requirement('money').total | money}}.
+        
+          &c&l&m                 
+          &c&l Rankup first!
+          &c&l&m                 
+  commands:
+    - 'adjustbonusclaimblocks {{player}} 258400'
+    - 'execute at {{player}} run playsound minecraft:ui.toast.challenge_complete player {{player}} ~ ~ ~'
+    - 'execute at {{player}} run particle minecraft:firework ~ ~1 ~ 1 1 1 0 30 normal'
+    - 'title {{player}} subtitle {"text":"Congratulations!","bold":true,"color":"aqua"}'
+    - 'title {{player}} title {"text":"Ranked up!","bold":true,"color":"light_purple"}'
+wyvern:
+  rank: 'wyvern'
+  next: 'dragon'
+  display-name: 'Wyvern'
+  requirements:
+    default:
+      - 'money 3050000'
+      - 'mob-kills ENDER_DRAGON 1'
+    I:
+      - 'money 30500000'
+      - 'mob-kills ENDER_DRAGON 2'
+    II:
+      - 'money 305000000'
+      - 'mob-kills ENDER_DRAGON 3'
+    III:
+      - 'money 3050000000'
+      - 'mob-kills ENDER_DRAGON 4'
+    IV:
+      - 'money 30500000000'
+      - 'mob-kills ENDER_DRAGON 5'
+    V:
+      - 'money 305000000000'
+      - 'mob-kills ENDER_DRAGON 6'
+    VI:
+      - 'money 3050000000000'
+      - 'mob-kills ENDER_DRAGON 7'
+    VII:
+      - 'money 30500000000000'
+      - 'mob-kills ENDER_DRAGON 8'
+    VIII:
+      - 'money 305000000000000'
+      - 'mob-kills ENDER_DRAGON 9'
+    IX:
+      - 'money 3050000000000000'
+      - 'mob-kills ENDER_DRAGON 10'
+    X:
+      - 'money 30500000000000000'
+      - 'mob-kills ENDER_DRAGON 11'
+  rankup:
+    requirements-not-met: |-
+      &4&m+                                       +
+      &cYou need
+      &c- &d&l${{rank.requirement('money').total | money}} &c&l- &b[%progress_bar_{rankup_requirement_money_percent_done}_c:&d|_p:&d|_r:&3|_l:20_m:100_fullbar:&a&lCompleted!%&b]
+      &b[%progress_bar_{{rank.requirement('money').percent|percent}}_c:&d|_p:&d|_r:&3|_l:20_m:100_fullbar:&a&lCompleted!%&b]
+      &c- &d&l{{rank.requirement('mob-kills#ENDER_DRAGON').total | simple}} Enderdragon kill(s) &c&l- &b[%progress_bar_{rankup_requirement_mob-kills#ENDER_DRAGON_percent_done}_c:&d|_p:&d|_r:&3|_l:20_m:100_fullbar:&a&lCompleted!%&b]
+      &cto rankup from &7&l{{rank.name}}&r&c to &e&l{{next.name}}&r&c!
+      &4&m+                                       +
+    gui:
+      rows: 4
+      title: "&3&lRanking up to &d&l{{next.name}}"
+      rankup:
+        material: GREEN_STAINED_GLASS_PANE
+        index: 10-12 19-21
+        name: '&a&lConfirm'
+        lore: |-
+          &8&l[&7Rankup to &b{{next.name}}&8&l]
+          &8&m       &a&l<Costs>&8&m       
+          &8- &8&l{{rank.requirement('mob-kills#ENDER_DRAGON').total | simple}} Enderdragon kill(s)
+          &8- &d&l${{rank.requirement('money').total | money}}.
+      cancel:
+        material: RED_STAINED_GLASS_PANE
+        index: 14-16 23-25
+        name: '&c&lCancel'
+        lore: |-
+          &cJust passing by!
+    ranksgui:
+      title: "Ranks"
+      rows: 4
+      offset: 10
+      width: 7
+      complete:
+        material: YELLOW_STAINED_GLASS_PANE
+        name: "&8&l[&b{{next.name}}&8&l]"
+        lore: |-
+          &8&m       &a&l<Costs>&8&m       
+          &8- &8&l{{rank.requirement('mob-kills#ENDER_DRAGON').total | simple}} Enderdragon kill(s)
+          &8- &d&l${{rank.requirement('money').total | money}}.
+        
+          &e&m    &a&l<&nCompleted!&a&l>&m    
+      current:
+        material: ORANGE_STAINED_GLASS_PANE
+        name: "&8&l[&7Rankup to &b{{next.name}}&8&l]"
+        lore: |-
+          &8&m       &a&l<Costs>&8&m       
+          &8- &8&l{{rank.requirement('mob-kills#ENDER_DRAGON').total | simple}} Enderdragon kill(s)
+          &8- &d&l${{rank.requirement('money').total | money}}.
+      incomplete:
+        material: RED_STAINED_GLASS_PANE
+        name: "&8&l[&b{{next.name}}&8&l]"
+        lore: |-
+          &8&m       &a&l<Costs>&8&m       
+          &8- &8&l{{rank.requirement('mob-kills#ENDER_DRAGON').total | simple}} Enderdragon kill(s)
+          &8- &d&l${{rank.requirement('money').total | money}}.
+        
+          &c&l&m                 
+          &c&l Rankup first!
+          &c&l&m                 
+  commands:
+    - 'adjustbonusclaimblocks {{player}} 418100'
+    - 'execute at {{player}} run playsound minecraft:ui.toast.challenge_complete player {{player}} ~ ~ ~'
+    - 'execute at {{player}} run particle minecraft:firework ~ ~1 ~ 1 1 1 0 30 normal'
+    - 'title {{player}} subtitle {"text":"Congratulations!","bold":true,"color":"aqua"}'
+    - 'title {{player}} title {"text":"Ranked up!","bold":true,"color":"light_purple"}'

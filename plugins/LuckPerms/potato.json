@@ -1,0 +1,3177 @@
+{
+  "metadata": {
+    "generatedBy": "zTriton",
+    "generatedAt": "2020-09-23 13:41:47 EDT"
+  },
+  "groups": {
+    "owner": {
+      "nodes": [
+        {
+          "type": "display_name",
+          "key": "displayname.Owner",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "nte.owner",
+          "value": true
+        },
+        {
+          "type": "suffix",
+          "key": "suffix.500.&8&l(&bOwner&8&l)&e ",
+          "value": true
+        },
+        {
+          "type": "weight",
+          "key": "weight.500",
+          "value": true
+        }
+      ]
+    },
+    "admin": {
+      "nodes": [
+        {
+          "type": "permission",
+          "key": "bomb.admin",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "bombs.admin",
+          "value": true
+        },
+        {
+          "type": "display_name",
+          "key": "displayname.Admin",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "drugs.admin",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.ban",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.ipban",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.moderator",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "nte.admin",
+          "value": true
+        },
+        {
+          "type": "suffix",
+          "key": "suffix.107.&8&l[&6Admin&8&l]&7 ",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "trees.admin",
+          "value": true
+        },
+        {
+          "type": "weight",
+          "key": "weight.102",
+          "value": true
+        }
+      ]
+    },
+    "moderator": {
+      "nodes": [
+        {
+          "type": "permission",
+          "key": "chatcolor.color.*",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.gamemode.*",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.tp.*",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.tphere.*",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "chatcolor.change.self",
+          "value": true
+        },
+        {
+          "type": "display_name",
+          "key": "displayname.Mod",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.clearinventory",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.clearinventory.others",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.gamemode",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.kit",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.tp",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.tphere",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.helper",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "nte.mod",
+          "value": true
+        },
+        {
+          "type": "suffix",
+          "key": "suffix.106.&8&l[&cMod&8&l]&7 ",
+          "value": true
+        },
+        {
+          "type": "weight",
+          "key": "weight.101",
+          "value": true
+        }
+      ]
+    },
+    "helper": {
+      "nodes": [
+        {
+          "type": "permission",
+          "key": "chatcolor.color.*",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "chatcolor.change.self",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "chatcolor.gui",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "deluxetags.gui",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "deluxetags.list.all",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.arrow",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.biohazard",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.fingers",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.hearth",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.money",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.plane",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.star",
+          "value": true
+        },
+        {
+          "type": "display_name",
+          "key": "displayname.Helper",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.fly",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.mute",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.nick",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.nick.color",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "fresh.staff.use",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.default",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "nte.helper",
+          "value": true
+        },
+        {
+          "type": "suffix",
+          "key": "suffix.105.&8&l[&aHelper&8&l]&7 ",
+          "value": true
+        },
+        {
+          "type": "weight",
+          "key": "weight.100",
+          "value": true
+        }
+      ]
+    },
+    "donor5": {
+      "nodes": [
+        {
+          "type": "permission",
+          "key": "auction.limit.10",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "auction.use",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "auctionhouse.limit.10",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "crazyauctions.sell.10",
+          "value": true
+        },
+        {
+          "type": "display_name",
+          "key": "displayname.Captain",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.kits.Captain",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.sethome.multiple.Crate7",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.warps.captain",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.donor4",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "nte.captain",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "sellall.shopmultiplier.captain",
+          "value": true
+        },
+        {
+          "type": "suffix",
+          "key": "suffix.104.&8[&6&lCaptain&8]&7 ",
+          "value": true
+        },
+        {
+          "type": "weight",
+          "key": "weight.54",
+          "value": true
+        }
+      ]
+    },
+    "donor4": {
+      "nodes": [
+        {
+          "type": "permission",
+          "key": "auction.limit.8",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "auctionhouse.limit.8",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "crazyauctions.sell.8",
+          "value": true
+        },
+        {
+          "type": "display_name",
+          "key": "displayname.Jollyroger",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.kits.jollyroger",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.sethome.multiple.Crate6",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.warps.jollyroger",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.donor3",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "nte.jollyroger",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "sellall.shopmultiplier.jollyroger",
+          "value": true
+        },
+        {
+          "type": "suffix",
+          "key": "suffix.103.&8[&c&lJollyRoger&8]&7 ",
+          "value": true
+        },
+        {
+          "type": "weight",
+          "key": "weight.53",
+          "value": true
+        }
+      ]
+    },
+    "donor3": {
+      "nodes": [
+        {
+          "type": "permission",
+          "key": "auction.limit.7",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "auctionhouse.limit.7",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "crazyauctions.sell.7",
+          "value": true
+        },
+        {
+          "type": "display_name",
+          "key": "displayname.Buccaneer",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.fly",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.kits.buccaneer",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.sethome.multiple.crate5",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.warps.buccaneer",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.donor2",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "nte.buccaneer",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "plots.plot.4",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "quicksell.shop.donor3",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "sellall.shopmultiplier.buccaneer",
+          "value": true
+        },
+        {
+          "type": "suffix",
+          "key": "suffix.102.&8[&d&lBuccaneer&8]&7 ",
+          "value": true
+        },
+        {
+          "type": "weight",
+          "key": "weight.52",
+          "value": true
+        }
+      ]
+    },
+    "donor2": {
+      "nodes": [
+        {
+          "type": "permission",
+          "key": "auction.limit.5",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "auctionhouse.limit.5",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "crazyauctions.sell.5",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "discoarmor.toggle",
+          "value": true
+        },
+        {
+          "type": "display_name",
+          "key": "displayname.Firstmate",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.kits.firstmate",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.nick",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.sethome.multiple.Crate4",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.warps.firstmate",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.donor1",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "nte.firstmate",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "plots.plot.3",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "sellall.shopmultiplier.firstmate",
+          "value": true
+        },
+        {
+          "type": "suffix",
+          "key": "suffix.101.&8[&3&lFirstmate&8]&7 ",
+          "value": true
+        },
+        {
+          "type": "weight",
+          "key": "weight.51",
+          "value": true
+        }
+      ]
+    },
+    "donor1": {
+      "nodes": [
+        {
+          "type": "permission",
+          "key": "silkspawners.silkdrop.*",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "auction.limit.5",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "auctionhouse.limit.4",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "chatcolor.all",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "chatcolor.use",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "chatitem.ignore-cooldown",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "crazyauctions.sell.4",
+          "value": true
+        },
+        {
+          "type": "display_name",
+          "key": "displayname.SeaDog",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.back",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.clearinventory",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.joinfullserver",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.keepxp",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.kits.seadog",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.recipe",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.sethome.multiple.Crate3",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.warps.seadog",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.workbench",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "nte.seadog",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "plots.plot.2",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "sellall.shopmultiplier.seadog",
+          "value": true
+        },
+        {
+          "type": "suffix",
+          "key": "suffix.100.&8[&9&lSeaDog&8]&7 ",
+          "value": true
+        },
+        {
+          "type": "weight",
+          "key": "weight.50",
+          "value": true
+        }
+      ]
+    },
+    "youtuber": {
+      "nodes": [
+        {
+          "type": "permission",
+          "key": "auction.limit.5",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "auctionhouse.limit.4",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "crazyauctions.sell.4",
+          "value": true
+        },
+        {
+          "type": "display_name",
+          "key": "displayname.Youtuber",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.back",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.fly",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.keepxp",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.kits.seadog",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.warps.seadog",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "nte.youtuber",
+          "value": true
+        },
+        {
+          "type": "suffix",
+          "key": "suffix.49.&8&l[ &5Twitch &8&l] ",
+          "value": true
+        },
+        {
+          "type": "weight",
+          "key": "weight.49",
+          "value": true
+        }
+      ]
+    },
+    "z": {
+      "nodes": [
+        {
+          "type": "display_name",
+          "key": "displayname.Z",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.warps.z",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.y",
+          "value": true
+        },
+        {
+          "type": "prefix",
+          "key": "prefix.2.&8&l(&a&lZ&8&l)",
+          "value": true
+        },
+        {
+          "type": "weight",
+          "key": "weight.26",
+          "value": true
+        }
+      ]
+    },
+    "y": {
+      "nodes": [
+        {
+          "type": "display_name",
+          "key": "displayname.Y",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.warps.y",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.x",
+          "value": true
+        },
+        {
+          "type": "prefix",
+          "key": "prefix.2.&8&l(&a&lY&8&l)",
+          "value": true
+        },
+        {
+          "type": "weight",
+          "key": "weight.25",
+          "value": true
+        }
+      ]
+    },
+    "x": {
+      "nodes": [
+        {
+          "type": "display_name",
+          "key": "displayname.X",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.warps.x",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.w",
+          "value": true
+        },
+        {
+          "type": "prefix",
+          "key": "prefix.2.&8&l(&a&lX&8&l)",
+          "value": true
+        },
+        {
+          "type": "weight",
+          "key": "weight.24",
+          "value": true
+        }
+      ]
+    },
+    "w": {
+      "nodes": [
+        {
+          "type": "display_name",
+          "key": "displayname.W",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.warps.w",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.v",
+          "value": true
+        },
+        {
+          "type": "prefix",
+          "key": "prefix.2.&8&l(&a&lW&8&l)",
+          "value": true
+        },
+        {
+          "type": "weight",
+          "key": "weight.23",
+          "value": true
+        }
+      ]
+    },
+    "v": {
+      "nodes": [
+        {
+          "type": "display_name",
+          "key": "displayname.V",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.warps.v",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.u",
+          "value": true
+        },
+        {
+          "type": "prefix",
+          "key": "prefix.2.&8&l(&a&lV&8&l)",
+          "value": true
+        },
+        {
+          "type": "weight",
+          "key": "weight.22",
+          "value": true
+        }
+      ]
+    },
+    "u": {
+      "nodes": [
+        {
+          "type": "display_name",
+          "key": "displayname.U",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.warps.u",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.t",
+          "value": true
+        },
+        {
+          "type": "prefix",
+          "key": "prefix.2.&8&l(&a&lU&8&l)",
+          "value": true
+        },
+        {
+          "type": "weight",
+          "key": "weight.21",
+          "value": true
+        }
+      ]
+    },
+    "t": {
+      "nodes": [
+        {
+          "type": "display_name",
+          "key": "displayname.T",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.warps.t",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.s",
+          "value": true
+        },
+        {
+          "type": "prefix",
+          "key": "prefix.2.&8&l(&a&lT&8&l)",
+          "value": true
+        },
+        {
+          "type": "weight",
+          "key": "weight.20",
+          "value": true
+        }
+      ]
+    },
+    "s": {
+      "nodes": [
+        {
+          "type": "display_name",
+          "key": "displayname.S",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.warps.s",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.r",
+          "value": true
+        },
+        {
+          "type": "prefix",
+          "key": "prefix.2.&8&l(&a&lS&8&l)",
+          "value": true
+        },
+        {
+          "type": "weight",
+          "key": "weight.19",
+          "value": true
+        }
+      ]
+    },
+    "r": {
+      "nodes": [
+        {
+          "type": "display_name",
+          "key": "displayname.R",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.warps.r",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.q",
+          "value": true
+        },
+        {
+          "type": "prefix",
+          "key": "prefix.2.&8&l(&a&lR&8&l)",
+          "value": true
+        },
+        {
+          "type": "weight",
+          "key": "weight.18",
+          "value": true
+        }
+      ]
+    },
+    "q": {
+      "nodes": [
+        {
+          "type": "display_name",
+          "key": "displayname.Q",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.kits.matrix",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.warps.q",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.p",
+          "value": true
+        },
+        {
+          "type": "prefix",
+          "key": "prefix.2.&8&l(&a&lQ&8&l)",
+          "value": true
+        },
+        {
+          "type": "weight",
+          "key": "weight.17",
+          "value": true
+        }
+      ]
+    },
+    "p": {
+      "nodes": [
+        {
+          "type": "display_name",
+          "key": "displayname.P",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.warps.p",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.o",
+          "value": true
+        },
+        {
+          "type": "prefix",
+          "key": "prefix.2.&8&l(&a&lP&8&l)",
+          "value": true
+        },
+        {
+          "type": "weight",
+          "key": "weight.16",
+          "value": true
+        }
+      ]
+    },
+    "o": {
+      "nodes": [
+        {
+          "type": "display_name",
+          "key": "displayname.O",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.warps.o",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.n",
+          "value": true
+        },
+        {
+          "type": "prefix",
+          "key": "prefix.2.&8&l(&a&lO&8&l)",
+          "value": true
+        },
+        {
+          "type": "weight",
+          "key": "weight.15",
+          "value": true
+        }
+      ]
+    },
+    "n": {
+      "nodes": [
+        {
+          "type": "display_name",
+          "key": "displayname.N",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.warps.n",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.m",
+          "value": true
+        },
+        {
+          "type": "prefix",
+          "key": "prefix.2.&8&l(&a&lN&8&l)",
+          "value": true
+        },
+        {
+          "type": "weight",
+          "key": "weight.14",
+          "value": true
+        }
+      ]
+    },
+    "m": {
+      "nodes": [
+        {
+          "type": "display_name",
+          "key": "displayname.M",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.warps.m",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.l",
+          "value": true
+        },
+        {
+          "type": "prefix",
+          "key": "prefix.2.&8&l(&a&lM&8&l)",
+          "value": true
+        },
+        {
+          "type": "weight",
+          "key": "weight.13",
+          "value": true
+        }
+      ]
+    },
+    "l": {
+      "nodes": [
+        {
+          "type": "display_name",
+          "key": "displayname.L",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.kits.deckhand",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.warps.l",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.k",
+          "value": true
+        },
+        {
+          "type": "prefix",
+          "key": "prefix.2.&8&l(&a&lL&8&l)",
+          "value": true
+        },
+        {
+          "type": "weight",
+          "key": "weight.12",
+          "value": true
+        }
+      ]
+    },
+    "k": {
+      "nodes": [
+        {
+          "type": "display_name",
+          "key": "displayname.K",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.warps.k",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.j",
+          "value": true
+        },
+        {
+          "type": "prefix",
+          "key": "prefix.2.&8&l(&a&lK&8&l)",
+          "value": true
+        },
+        {
+          "type": "weight",
+          "key": "weight.11",
+          "value": true
+        }
+      ]
+    },
+    "j": {
+      "nodes": [
+        {
+          "type": "display_name",
+          "key": "displayname.J",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.warps.j",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.i",
+          "value": true
+        },
+        {
+          "type": "prefix",
+          "key": "prefix.2.&8&l(&a&lJ&8&l)",
+          "value": true
+        },
+        {
+          "type": "weight",
+          "key": "weight.10",
+          "value": true
+        }
+      ]
+    },
+    "i": {
+      "nodes": [
+        {
+          "type": "display_name",
+          "key": "displayname.I",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.warps.i",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.h",
+          "value": true
+        },
+        {
+          "type": "prefix",
+          "key": "prefix.2.&8&l(&a&lI&8&l)",
+          "value": true
+        },
+        {
+          "type": "weight",
+          "key": "weight.9",
+          "value": true
+        }
+      ]
+    },
+    "h": {
+      "nodes": [
+        {
+          "type": "display_name",
+          "key": "displayname.H",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.warps.h",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.g",
+          "value": true
+        },
+        {
+          "type": "prefix",
+          "key": "prefix.2.&8&l(&a&lH&8&l)",
+          "value": true
+        },
+        {
+          "type": "weight",
+          "key": "weight.8",
+          "value": true
+        }
+      ]
+    },
+    "g": {
+      "nodes": [
+        {
+          "type": "display_name",
+          "key": "displayname.G",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.warps.g",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.f",
+          "value": true
+        },
+        {
+          "type": "prefix",
+          "key": "prefix.2.&8&l(&a&lG&8&l)",
+          "value": true
+        },
+        {
+          "type": "weight",
+          "key": "weight.7",
+          "value": true
+        }
+      ]
+    },
+    "f": {
+      "nodes": [
+        {
+          "type": "display_name",
+          "key": "displayname.F",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.warps.f",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.e",
+          "value": true
+        },
+        {
+          "type": "prefix",
+          "key": "prefix.2.&8&l(&a&lF&8&l)",
+          "value": true
+        },
+        {
+          "type": "weight",
+          "key": "weight.6",
+          "value": true
+        }
+      ]
+    },
+    "e": {
+      "nodes": [
+        {
+          "type": "display_name",
+          "key": "displayname.E",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.kits.deckhand",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.warps.e",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.d",
+          "value": true
+        },
+        {
+          "type": "prefix",
+          "key": "prefix.2.&8&l(&a&lE&8&l)",
+          "value": true
+        },
+        {
+          "type": "weight",
+          "key": "weight.5",
+          "value": true
+        }
+      ]
+    },
+    "d": {
+      "nodes": [
+        {
+          "type": "display_name",
+          "key": "displayname.D",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.warps.d",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.c",
+          "value": true
+        },
+        {
+          "type": "prefix",
+          "key": "prefix.2.&8&l(&a&lD&8&l)",
+          "value": true
+        },
+        {
+          "type": "weight",
+          "key": "weight.4",
+          "value": true
+        }
+      ]
+    },
+    "c": {
+      "nodes": [
+        {
+          "type": "display_name",
+          "key": "displayname.C",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.warps.c",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.b",
+          "value": true
+        },
+        {
+          "type": "prefix",
+          "key": "prefix.2.&8&l(&a&lC&8&l)",
+          "value": true
+        },
+        {
+          "type": "weight",
+          "key": "weight.3",
+          "value": true
+        }
+      ]
+    },
+    "b": {
+      "nodes": [
+        {
+          "type": "display_name",
+          "key": "displayname.B",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.warps.b",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.default",
+          "value": true
+        },
+        {
+          "type": "prefix",
+          "key": "prefix.2.&8&l(&a&lB&8&l)",
+          "value": true
+        },
+        {
+          "type": "weight",
+          "key": "weight.2",
+          "value": true
+        }
+      ]
+    },
+    "default": {
+      "nodes": [
+        {
+          "type": "permission",
+          "key": "shopguiplus.shops.*",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "silkspawners.place.*",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "BeastWithdraw.CashNote",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "BeastWithdraw.CashNote.All",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "BeastWithdraw.XpBottle",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "BeastWithdraw.XpBottle.All",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "auction.limit.3",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "auctionhouse.limit.3",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "auctionhouse.use",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "autosell.sellall",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "autosell.sellall.basic",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "autosell.shop.basic",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "autosell.toggle",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "bar.example",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "bombs.normal",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "bountyhunters.add",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "bountyhunters.claim",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "bountyhunters.gui",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "bountyhunters.leaderboard-gui",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "chatformat.default",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "chatitem.use",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "chatreborn.format.default",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "cr.claim",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "crazyauctions.access",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "crazyauctions.sell",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "crazyauctions.sell.3",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "ctplus.check",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "deluxechat.pm",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "deluxemenus.open",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "deluxetags.gui",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "deluxetags.list.all",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "deluxetags.list.player",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "deluxetags.select",
+          "value": true
+        },
+        {
+          "type": "display_name",
+          "key": "displayname.A",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.balance",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.balancetop",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.clearinventory",
+          "value": false
+        },
+        {
+          "type": "permission",
+          "key": "essentials.kit",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.kits.sharkbait",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.sethome.multiple",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.spawn",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.suicide",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.warp",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.warps.a",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.warps.autominer",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.warps.crate",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.warps.crates",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.warps.enchant",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.warps.plots",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.warps.plotworld",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.warps.pvp",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.warps.staff",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "essentials.warps.xp",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "et.basic",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "nte.default",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "plots.auto",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "plots.claim",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "plots.merge",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "plots.permpack.basic",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "plots.permpack.basicinbox",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "plots.plot.1",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "plots.visit",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "plots.visit.other",
+          "value": true
+        },
+        {
+          "type": "prefix",
+          "key": "prefix.1.&8&l(&a&lA&8&l)",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "quicksell.shop.basic",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "shiftopenkeys.open",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "shiftopenkeys.preview",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "shop.buy",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "shop.command.open",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "shop.command.usage",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "shop.sell",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "shopchest.buy",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "shopchest.create",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "shopchest.create.buy",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "shopchest.create.sell",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "shopchest.extend.protected",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "shopchest.sell",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "shopguiplus.shop",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "tokenenchant.balance",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "tokenenchant.expexchange",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "tokenenchant.repair",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "tokenenchant.withdraw",
+          "value": true
+        },
+        {
+          "type": "weight",
+          "key": "weight.1",
+          "value": true
+        }
+      ]
+    },
+    "p1": {
+      "nodes": [
+        {
+          "type": "permission",
+          "key": "chatformat.prestige",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "chatreborn.format.prestige",
+          "value": true
+        }
+      ]
+    },
+    "p10": {
+      "nodes": [
+        {
+          "type": "permission",
+          "key": "chatformat.prestige10",
+          "value": true
+        }
+      ]
+    },
+    "p2": {
+      "nodes": [
+        {
+          "type": "permission",
+          "key": "chatformat.prestige2",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "chatreborn.format.prestige2",
+          "value": true
+        }
+      ]
+    },
+    "p3": {
+      "nodes": [
+        {
+          "type": "permission",
+          "key": "chatformat.prestige3",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "chatreborn.format.prestige3",
+          "value": true
+        }
+      ]
+    },
+    "p4": {
+      "nodes": [
+        {
+          "type": "permission",
+          "key": "chatformat.prestige4",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "chatreborn.format.prestige4",
+          "value": true
+        }
+      ]
+    },
+    "p5": {
+      "nodes": [
+        {
+          "type": "permission",
+          "key": "chatformat.prestige5",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "chatreborn.format.prestige5",
+          "value": true
+        }
+      ]
+    },
+    "p6": {
+      "nodes": [
+        {
+          "type": "permission",
+          "key": "chatformat.prestige6",
+          "value": true
+        }
+      ]
+    },
+    "p7": {
+      "nodes": [
+        {
+          "type": "permission",
+          "key": "chatformat.prestige7",
+          "value": true
+        }
+      ]
+    },
+    "p8": {
+      "nodes": [
+        {
+          "type": "permission",
+          "key": "chatformat.prestige8",
+          "value": true
+        }
+      ]
+    },
+    "p9": {
+      "nodes": [
+        {
+          "type": "permission",
+          "key": "chatformat.prestige9",
+          "value": true
+        }
+      ]
+    }
+  },
+  "tracks": {},
+  "users": {
+    "80e4b9ee-3837-4f6e-bcca-dee58cf91eab": {
+      "username": "luisesru",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.e",
+          "value": true
+        }
+      ]
+    },
+    "829f032e-0470-412b-9298-3cdd097986ae": {
+      "username": "bugermaster138",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.k",
+          "value": true
+        }
+      ]
+    },
+    "85c50331-af20-4ac0-b6c0-11aeba43d903": {
+      "username": "spielerid",
+      "nodes": [
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.Biohazard",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.Money",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.Star",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.z",
+          "value": true
+        }
+      ]
+    },
+    "89ee1029-b283-4cfe-89f8-bb4d782c2c54": {
+      "username": "nobbylolyt",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.j",
+          "value": true
+        }
+      ]
+    },
+    "8b1cbae6-9b50-44f5-832b-28c0a94d27f1": {
+      "username": "thed4rkness",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.e",
+          "value": true
+        }
+      ]
+    },
+    "8b72a656-0ff6-430e-b752-a6532da03244": {
+      "username": "hermione5303",
+      "nodes": [
+        {
+          "type": "permission",
+          "key": "true",
+          "value": true,
+          "context": {
+            "server": "deluxetags.tag.star"
+          }
+        },
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.God",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.god",
+          "value": false
+        },
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.star",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.p",
+          "value": true
+        }
+      ]
+    },
+    "8c0d41c2-291c-4d82-8179-75b4181cae0a": {
+      "username": "kappios",
+      "nodes": [
+        {
+          "type": "permission",
+          "key": "autopickup.material.cobblestone",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "autopickup.material.stone",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.default",
+          "value": true
+        }
+      ]
+    },
+    "8c6a70bb-c79b-47ea-8d27-56fbfd183709": {
+      "username": "ombranera",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.b",
+          "value": true
+        }
+      ]
+    },
+    "8f285de7-7fda-4108-8f51-c9334a19fbd8": {
+      "username": "leonellus8914",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.l",
+          "value": true
+        }
+      ]
+    },
+    "8fed7d54-d2d9-4aca-99b9-2286249695b2": {
+      "username": "quengler",
+      "nodes": [
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.Star",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.b",
+          "value": true
+        }
+      ]
+    },
+    "91cf940a-ab27-4027-ab9a-24e7b93f5555": {
+      "username": "oxdard",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.b",
+          "value": true
+        }
+      ]
+    },
+    "955e2fc6-ec4a-4174-a86e-f8bb307a52c1": {
+      "username": "giftzwergerl",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.d",
+          "value": true
+        }
+      ]
+    },
+    "98fb79b4-d2e0-44b4-8fd9-526c3d76d740": {
+      "username": "x_mroreo_x",
+      "nodes": [
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.Biohazard",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.Money",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.Star",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.p1",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.u",
+          "value": true
+        }
+      ]
+    },
+    "9da94fd2-1dd6-4b82-b889-22390dc349fe": {
+      "username": "yoinkmeister",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.d",
+          "value": true
+        }
+      ]
+    },
+    "a1ed70d3-81d8-4cf4-ac55-ace220bad2c0": {
+      "username": "namxnlos",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.k",
+          "value": true
+        }
+      ]
+    },
+    "a4267d9c-1872-4f0b-9a0d-360351cca02d": {
+      "username": "boostedgrilll",
+      "primaryGroup": "youtuber",
+      "nodes": [
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.Plane",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.Star",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.v",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.youtuber",
+          "value": true
+        }
+      ]
+    },
+    "a624cd6a-59a4-4b5a-aba8-069a9ac18512": {
+      "username": "scarlxrdd",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.k",
+          "value": true
+        }
+      ]
+    },
+    "b074ae91-4619-48c9-b97c-653d0a35d5e0": {
+      "username": "luisgamerpcl",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.b",
+          "value": true
+        }
+      ]
+    },
+    "b11f6649-7611-43c9-a41e-cb072849f16b": {
+      "username": "cjaxxx",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.b",
+          "value": true
+        }
+      ]
+    },
+    "b1980979-d97d-4509-b646-921236590fc0": {
+      "username": "prixma",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.b",
+          "value": true
+        }
+      ]
+    },
+    "b1e84549-3b81-45f0-9214-07032706ed9b": {
+      "username": "darkmage20",
+      "primaryGroup": "donor1",
+      "nodes": [
+        {
+          "type": "permission",
+          "key": "essentials.gamemode.*",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.Plane",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.Star",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.donor1",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.helper",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.p1",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.p10",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.p5",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.z",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "plots.plot.3",
+          "value": true
+        }
+      ]
+    },
+    "c12d7e81-7d2e-4e60-898f-c00ce723f2c4": {
+      "username": "bedincoming_",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.d",
+          "value": true
+        }
+      ]
+    },
+    "c142af9f-91b5-4e00-819a-ef7310958330": {
+      "username": "reqchh",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.p",
+          "value": true
+        }
+      ]
+    },
+    "cb077856-5b51-4066-8bcc-bce0258231ae": {
+      "username": "trixtxn",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.b",
+          "value": true
+        }
+      ]
+    },
+    "ccfdc011-51e1-46b6-b67b-9240a823a01d": {
+      "username": "207toke",
+      "primaryGroup": "owner",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.owner",
+          "value": true
+        }
+      ]
+    },
+    "cec0af46-f3fc-4285-8fd6-fd68807040bb": {
+      "username": "ilycadence",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.d",
+          "value": true
+        }
+      ]
+    },
+    "cf3382b6-f420-4d5c-8956-b1683ce81dc5": {
+      "username": "kenssaint",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.b",
+          "value": true
+        }
+      ]
+    },
+    "d3a8300b-40c6-47e0-a52b-6dc05667553c": {
+      "username": "rabbitburns",
+      "nodes": [
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.Star",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.d",
+          "value": true
+        }
+      ]
+    },
+    "d42da880-473f-4b9e-a69d-9a20196c5e64": {
+      "username": "xx_hufflecat_xx",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.h",
+          "value": true
+        }
+      ]
+    },
+    "d6674924-fea5-4f39-8f29-651792432df9": {
+      "username": "tatsumi_",
+      "nodes": [
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.God",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.b",
+          "value": true
+        }
+      ]
+    },
+    "d77479ee-faaa-4064-ad72-b1e94e0cc414": {
+      "username": "seca03",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.d",
+          "value": true
+        }
+      ]
+    },
+    "dd099112-eee2-4ad3-9cba-79f4d329dcdf": {
+      "username": "nauku",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.g",
+          "value": true
+        }
+      ]
+    },
+    "deca2ec7-c629-4910-bf59-4fc3295d7971": {
+      "username": "_monsterpajak_",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.e",
+          "value": true
+        }
+      ]
+    },
+    "e31232c4-5d0d-4274-925e-d7cd822f8695": {
+      "username": "deathxr",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.b",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.donor1",
+          "value": true
+        }
+      ]
+    },
+    "e7639c8e-f01b-49e0-b8c7-9ce4f64fdb17": {
+      "username": "lazarevic1337",
+      "nodes": [
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.Money",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.Star",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.donor1",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.p1",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.q",
+          "value": true
+        }
+      ]
+    },
+    "e79e0286-9be1-4c64-90c5-aafec9aa5aa8": {
+      "username": "toothless_1234",
+      "nodes": [
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.Biohazard",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.Money",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.Star",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.z",
+          "value": true
+        }
+      ]
+    },
+    "ea6153a0-6e9b-49d1-8d06-684ca306623a": {
+      "username": "michaelk2101",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.e",
+          "value": true
+        }
+      ]
+    },
+    "ecb801ce-9930-4740-bb26-a60657549569": {
+      "username": "bryantmoreland",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.c",
+          "value": true
+        }
+      ]
+    },
+    "f2b0f0ab-ba17-4ac4-aa7c-7858122098f9": {
+      "username": "zsilent",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.g",
+          "value": true
+        }
+      ]
+    },
+    "f32ea07a-9bc6-4f3f-8454-f71aee113288": {
+      "username": "mras949",
+      "nodes": [
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.Star",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.p1",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.z",
+          "value": true
+        }
+      ]
+    },
+    "f3aa6caf-033e-4d82-bfcb-95040cf0c87a": {
+      "username": "georgeperks6",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.d",
+          "value": true
+        }
+      ]
+    },
+    "f6b94a83-4514-4d45-a96c-95d7b0b6e989": {
+      "username": "reesesuk",
+      "nodes": [
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.Biohazard",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.Money",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.Star",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.p3",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.v",
+          "value": true
+        }
+      ]
+    },
+    "fee4687a-b11a-4427-abc3-a0a43650a282": {
+      "username": "xnativeassassin",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.f",
+          "value": true
+        }
+      ]
+    },
+    "002e553c-9e5d-4fa2-9037-dba52cdd9a85": {
+      "username": "acez609",
+      "nodes": [
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.Biohazard",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.o",
+          "value": true
+        }
+      ]
+    },
+    "01dd909b-034d-4d32-bd6e-68036c40dd5e": {
+      "username": "famosoyi",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.d",
+          "value": true
+        }
+      ]
+    },
+    "0c8adfa9-c066-448e-9124-09b98a812894": {
+      "username": "devilishprincess",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.d",
+          "value": true
+        }
+      ]
+    },
+    "13ded83a-88ab-4d07-91c2-3222e51a56b4": {
+      "username": "trunant",
+      "nodes": [
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.Star",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.default",
+          "value": true
+        }
+      ]
+    },
+    "14d43996-58ac-4602-b9d5-4acadd655fd6": {
+      "username": "xunavailablex",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.default",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.donor1",
+          "value": true
+        }
+      ]
+    },
+    "1718f2bd-3b24-4307-9696-c6812d965a99": {
+      "username": "phamoo0",
+      "nodes": [
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.Star",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.y",
+          "value": true
+        }
+      ]
+    },
+    "1be94ecb-b078-42a1-b92d-cae66a797c53": {
+      "username": "xxdoramixx",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.e",
+          "value": true
+        }
+      ]
+    },
+    "21a03b81-e60a-4fa2-9a01-07b5c53b56a6": {
+      "username": "braydexnn",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.j",
+          "value": true
+        }
+      ]
+    },
+    "22b4435f-04d5-4a26-a72c-694a617f190d": {
+      "username": "btwleq1t",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.d",
+          "value": true
+        }
+      ]
+    },
+    "241979f0-0c04-4bb4-a3c6-3c52b354b98b": {
+      "username": "luigical",
+      "primaryGroup": "owner",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.default",
+          "value": true
+        }
+      ]
+    },
+    "25070a4b-01a5-48f9-8942-a6a2d71814d6": {
+      "username": "slightlysavage_",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.v",
+          "value": true
+        }
+      ]
+    },
+    "2bb5e0aa-42e3-4303-8106-bbbbfca5080a": {
+      "username": "teckronyt",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.b",
+          "value": true
+        }
+      ]
+    },
+    "33b35b80-8cbf-4dd3-ae19-28fbca8d2051": {
+      "username": "seaside24",
+      "nodes": [
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.Money",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.Star",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.q",
+          "value": true
+        }
+      ]
+    },
+    "36878870-c4ed-42e4-a047-51792b46dd44": {
+      "username": "harib0",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.b",
+          "value": true
+        }
+      ]
+    },
+    "377097b7-fa72-4cac-b508-96c5789e02a5": {
+      "username": "85b",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.b",
+          "value": true
+        }
+      ]
+    },
+    "434a18e5-bdc0-48c3-893a-e569a0d3ff9b": {
+      "username": "llysm",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.u",
+          "value": true
+        }
+      ]
+    },
+    "4438d6c1-ca09-4de9-aee1-ec58f772e3ff": {
+      "username": "notal3h",
+      "nodes": [
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.Star",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.v",
+          "value": true
+        }
+      ]
+    },
+    "49d279e3-3105-461b-b2f9-2ee1d41ccc36": {
+      "username": "dutchspeed",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.k",
+          "value": true
+        }
+      ]
+    },
+    "4aa3d8f8-2206-4931-a7ca-14b4b863e3ff": {
+      "username": "blaze2311",
+      "nodes": [
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.Star",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.d",
+          "value": true
+        }
+      ]
+    },
+    "4b630595-a6dd-48fb-b98e-dc93274e7572": {
+      "username": "wana04",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.k",
+          "value": true
+        }
+      ]
+    },
+    "4ddf52e6-4fc7-4344-af83-1dfda6e1af91": {
+      "username": "overbored_thekid",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.d",
+          "value": true
+        }
+      ]
+    },
+    "4eb500d3-372b-4408-beae-0de24df04a4f": {
+      "username": "bakru1337",
+      "nodes": [
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.Money",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.Plane",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.Star",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.v",
+          "value": true
+        }
+      ]
+    },
+    "50e8c0b5-c905-4b4c-93f2-d22d007e46ee": {
+      "username": "kukao",
+      "nodes": [
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.Money",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.Plane",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.Star",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.biohazard",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.mod",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.moderator",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.p2",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.z",
+          "value": true
+        }
+      ]
+    },
+    "52c8a525-7bad-4bb0-8946-2a1973366cbb": {
+      "username": "ztriton",
+      "nodes": [
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.God",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.d",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.owner",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.p10",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.p3",
+          "value": true
+        }
+      ]
+    },
+    "598823f7-14a6-4a64-a031-8038841f707c": {
+      "username": "imnotsupreme_",
+      "nodes": [
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.Money",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.Star",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.y",
+          "value": true
+        }
+      ]
+    },
+    "5b74fa5f-0fcc-4174-8249-a55b68a35e32": {
+      "username": "mylxh",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.z",
+          "value": true
+        }
+      ]
+    },
+    "5bc0d4be-81be-46c4-b90f-44ea41b23e7f": {
+      "username": "mrslimeslayer",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.b",
+          "value": true
+        }
+      ]
+    },
+    "68a37dc7-f468-4fc6-a7dc-d5c63f9c8d5b": {
+      "username": "rilz2016",
+      "nodes": [
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.Biohazard",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.v",
+          "value": true
+        }
+      ]
+    },
+    "6955ff83-ca5f-451a-a57a-24f7d831311c": {
+      "username": "darkcoal28",
+      "nodes": [
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.Biohazard",
+          "value": true
+        },
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.Star",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.d",
+          "value": true
+        }
+      ]
+    },
+    "7557703f-a1ba-4e7a-815e-5526d29a2c6d": {
+      "username": "thesquaretigeryt",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.f",
+          "value": true
+        }
+      ]
+    },
+    "75a4368d-56df-4aa3-979c-cb5ea3af6cb3": {
+      "username": "dizzyknighty",
+      "nodes": [
+        {
+          "type": "permission",
+          "key": "deluxetags.tag.Star",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.b",
+          "value": true
+        }
+      ]
+    },
+    "76ca4027-0d6c-4880-bf2b-39e661e58cfa": {
+      "username": "kjlmbl",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.d",
+          "value": true
+        }
+      ]
+    },
+    "7bc59ffd-4545-4f4e-a757-7577975df6e3": {
+      "username": "quinten135",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.j",
+          "value": true
+        }
+      ]
+    },
+    "7c00c639-b705-4dee-92e8-9b987d6cd2ca": {
+      "username": "guardianoflife",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.default",
+          "value": true
+        },
+        {
+          "type": "inheritance",
+          "key": "group.p1",
+          "value": true
+        }
+      ]
+    },
+    "7fe5803f-6fc7-4b41-9191-8d1c9d518fcc": {
+      "username": "callmezek0",
+      "nodes": [
+        {
+          "type": "inheritance",
+          "key": "group.e",
+          "value": true
+        }
+      ]
+    }
+  }
+}

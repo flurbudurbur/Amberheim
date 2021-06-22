@@ -1,0 +1,28 @@
+class-points: 0
+skill-points: 1
+attribute-points: 0
+attribute-realloc-points: 0
+level: 2
+experience: 141
+class: ROGUE
+waypoints: []
+friends: []
+last-login: 1624312598045
+bound-skills: []
+attribute:
+  dexterity: 0
+  strength: 0
+  intelligence: 0
+profession:
+  smithing:
+    exp: 0
+    level: 0
+  enchanting:
+    exp: 170
+  woodcutting:
+    exp: 209
+    level: 3
+  mining:
+    exp: 180
+    level: 2
+quest: {}

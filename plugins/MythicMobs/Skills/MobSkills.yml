@@ -1,0 +1,27 @@
+Creeper:
+  - skill{s=CreeperCharge} @self ~onAttack 1
+  - signal{s=CCtrigger}
+  - delay 100
+  - suicide ~onAttack 1
+
+CreeperCharge:
+  - orbital{oS=CCstart;oT=CCtick;oH=CChit;oE=CCend;c=3;d=100;r=3.5;cod=false} ~onSignal:CCtrigger
+  - signal{s=CCstart} ~onSignal:CCtrigger
+  - effect:particletornado{p=smoke;mr=3;yo=0;h=3;i=1;rs=0.5;sh=3;;cs=1;cvs=0.1;cyo=2;d=100} @self ~onTimer:10
+
+CCstart:
+  - setvariable{var=skill.ccstart;val=0.0;d=120} @none ~onSignal:CCstart
+  - barCreate{n=ccstart;d=&3Charge - <scope.var.skill.ccstart|0.0>;v=0.0;c=RED;s=SOLID} @target ~onSignal:CCstart
+
+CCtick:
+  - variableadd{var=skill.ccstart;a=0.01} @none ~on
+  - barSet{n=ccstart;d=&3Charge - <scope.var.skill.ccstart|0.0>;v=<scope.var.skill.ccstart|0.0>} @target ~onInteract
+  - effect:flames @origin ~onTimer:2
+
+CChit:
+  - effect:explosion @target ~onAttack
+  - barRemove{n=ccstart} @trigger ~onAttack
+  - explosion{y=0.4;bd=true;ft=true} @target ~onAttack
+
+CCend:
+ - barRemove{n=ccstart} @target ~onInteract

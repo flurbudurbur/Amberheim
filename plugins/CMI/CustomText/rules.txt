@@ -1,0 +1,24 @@
+<AutoPage><AutoAlias><NoReqPermission>
+<T>&3&l>&3&m                             &3&l[&8Rules &8&l[1/2] &3&l]&3&m                            &3&l<</T><H>&3Page 1</H>
+<T>&b&lHover over the rule for more information!</T><H>&3Yea, like this!</H>
+<T>&8[1] &3No Griefing.</T><H>&3Do not damage things that belong to people.</H>
+<T>&8[2] &3Cursing is allowed as long as it's not directed at someone.</T><H>&3We're not about hurting people's feelings\nhere. Be respectful to others.</H>
+<T>&8[3] &3No spamming.</T><H>&3Don't type too fast, you'll be\nautomatically silenced otherwise.</H>
+<T>&8[4] &3English only server.</T><H>&3We want to know what you're\nsaying, just in case.</H>
+<T>&8[5] &3No cheats (duh).</T><H>&3The fact this needs to be\nsaid is kinda funny.</H>
+<T>&8[6] &3PVP is allowed, but all players must agree.</T><H>&3We keep logs, we'll know.</H>
+<T>&8[7] &3Traps are allowed but portal-trapping is not.</T><H>&3It's allowed, but it ain't\nnice. Keep that in mind.</H>
+<T>&8[8] &3AFK-ing is allowed but if you somehow get kicked and are\nstill afk you are not allowed to rejoin.</T><H>&3If you don't like it,\nfeel free to tell us :)</H>
+<NextPage>
+<T>&3&l>&3&m                             &3&l[&8Rules &8&l[2/2] &3&l]&3&m                            &3&l<</T><H>&3Page 2</H>
+<T>&b&lHover over the rule for more information!</T><H>&3Great job!</H>
+<T>&8[9] &3Punishment evading is... also a punishable offence .-.</T><H>&3Why even try ._.</H>
+<T>&8[10] &3Leave a claim when asked by the (co-)owner.</T><H>&3</H><H>&3The owner of the claim, that is.</H>
+<T>&8[11] &3Do not box someone else's claim in.</T><H>&3Honestly, what did you think?</H>
+<T>&8[12] &3Biomes may not be monopolized.</T><H>&3Good luck keeping that mesa biome!</H>
+<T>&8[13] &3Nicknames may not: (hover)</T><H>&3- Refer to someone else in a sexual way.\n- Contain racist, sexist or derogatory terms.\n- Refer to another user without consent.</H>
+<T>&8[14] &3No impersonation.</T><H>&3Don't act like someone else, you're good enough.</H>
+<T>&3&m                                                                                </T>
+<T>&bThe rules may change or get updated so keep an eye on them!</T>
+<T>&bCheck the</T><Next><T> &3&l&nDiscord</T><H>&3Click to join!</H><URL>http://discord.amberheim.com</URL><Next><T>&b for more elaboration on the rules.</T>
+<T>&3&m                                                                                </T>

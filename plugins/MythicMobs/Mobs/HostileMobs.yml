@@ -1,0 +1,111 @@
+ZOMBIE:
+  Type: ZOMBIE
+  Health: 8
+  Damage: 2
+  Options:
+    AttackSpeed: 0.7
+    MovementSpeed: 0.2
+    RepeatAllSkills: true
+  Modules:
+    ThreatTable: true
+    ImmunityTable: true
+  AIGoalSelectors:
+    - 0 clear
+    - 1 meleeattack
+    - 2 movetowardstarget
+    - 3 randomstroll
+    - 4 float
+  AITargetSelectors:
+    - 0 attacker
+    - 1 player
+  Drops:
+    - exp 14-30 1
+    - ROTTEN_FLESH 3-7 1
+  DamageModifiers:
+    - PROJECTILE 3.0
+    - THORNS 0
+    - BLOCK_EXPLOSION 0
+    - ENTITY_EXPLOSION 0
+    - POISON 1.5
+  LevelModifiers:
+    Health: 3
+    Damage: 2
+  KillMessage:
+    - '&3<target.name> &cwas killed by a level &3<caster.level> <caster.name>&c!'
+  Skills:
+    - setname{name=<caster.name>} @self ~onTimer:20
+    - heal{amount=4} @self ~onDamaged <50% 0.4
+    - ignite{ticks=60} @target ~onAttack 0.3
+    - healpercent{m=0.6} @self ~onDamaged <20% 0.4
+    - shootfireball{v=1;i=true;ft=100;delay=100} @target ~onTimer:77 0.3
+    - setlevel{a=add;l=1} ~onKillPlayer 1
+
+SKELETON:
+  Type: SKELETON
+  Health: 8
+  Options:
+    AttackSpeed: 2.7
+    MovementSpeed: 0.2
+    RepeatAllSkills: true
+  Modules:
+    ThreatTable: true
+    ImmunityTable: true
+  AIGoalSelectors:
+    - 0 clear
+    - 1 arrowattack
+    - 2 skeletonbowattack
+    - 3 movetowardstarget
+    - 4 randomstroll
+    - 5 float
+  AITargetSelectors:
+    - 0 attacker
+    - 1 player
+  Drops:
+    - exp 4-10 1
+    - BONE 3-7 1
+  Equipment:
+    - crossbow:0
+    - shield:5
+  DamageModifiers:
+    - PROJECTILE 0
+    - THORNS 0
+    - BLOCK_EXPLOSION 0
+    - ENTITY_EXPLOSION 0
+  LevelModifiers:
+    Health: 3
+    Damage: 2
+  Skills:
+    - arrowvolley{rd=10;s=200;f=40;delay=100} @target ~onTimer:71 0.2
+    - shield{a=20;ms=50} @self ~onSpawn
+
+CREEPER:
+  Type: CREEPER
+  Health: 16
+  Options:
+    AttackSpeed: 2.7
+    MovementSpeed: 0.2
+    RepeatAllSkills: true
+  Modules:
+    ThreatTable: true
+    ImmunityTable: true
+  AIGoalSelectors:
+    - 0 clear
+    - 1 leapattarget
+    - 2 meleeattack
+    - 3 movetowardstarget
+    - 4 randomstroll
+    - 5 float
+  AITargetSelectors:
+    - 0 clear
+    - 1 attacker
+    - 2 player
+  LevelModifiers:
+    Health: 3
+    Damage: 2
+  Skills:
+    - look{headOnly=true} @target ~onTimer:10
+    - explosion{y=0.4;f=true;delay=60;repeat=4} @EIR{r=4} ~onDamaged 1
+    - stun{d=20;f=true} @PIR{r=5} ~onDamaged 1
+    - rally{t=CREEPER;r=15;ot=true} @MIR{r=15;t=CREEPER} ~onDamaged
+    - effect:explosion @self ~onExplode 1
+    - skill{s=Creeper} ~onDamaged 1

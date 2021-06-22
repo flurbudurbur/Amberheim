@@ -1,0 +1,4 @@
+<AutoPage><AutoAlias><NoReqPermission>
+<T>&b&m                      </T>
+<T>&3Click for Discord</T><H>&3Click me!</H><URL>http://discord.amberheim.com</URL>
+<T>&b&m                      </T>

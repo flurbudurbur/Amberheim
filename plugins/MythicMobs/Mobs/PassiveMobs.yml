@@ -1,0 +1,97 @@
+BAT:
+  Type: BAT
+  Display: 'Bat'
+  Health: 8
+  Damage: 2
+  Options:
+    AttackSpeed: 0.4
+    MovementSpeed: 0.1
+    FollowRange: 40
+    ShowHealth: true
+    RepeatAllSkills: true
+    MaxCombatRange: 5
+    NoDamageTicks: 15
+    PreventSunburn: true
+    Silent: true
+  Modules:
+    ThreatTable: true
+    ImmunityTable: true
+  AIGoalSelectors:
+    - 0 clear
+    - 1 meleeattack
+    - 2 movetowardstarget
+  AITargetSelectors:
+    - 0 attacker
+    - 1 player
+  Drops:
+    - exp 4-10 0.3
+  DamageModifiers:
+    - ENTITY_ATTACK 0.90
+    - PROJECTILE 3.0
+    - MAGIC 1.25
+    - FIRE -2
+    - LAVA -4
+    - FIRE_TICK 0
+    - THORNS 0
+    - BLOCK_EXPLOSION 0
+    - ENTITY_EXPLOSION 0
+    - POISON 1.5
+  LevelModifiers:
+    Health: 3
+    Damage: 2
+  KillMessage:
+    - '&3<target.name> &cwas killed by a level &3<caster.level> <caster.name>&c!'
+  Skills:
+    - setname{name=&3<caster.name> &d- &c<caster.level>} @self ~onTimer:20
+    - heal{amount=4} @self ~onDamaged <50% 0.4
+    - ignite{ticks=60} @target ~onAttack 0.3
+    - potionclear{} @self <20% 1
+    - healpercent{m=0.6} @self ~onDamaged <20% 0.4
+    - shootfireball{v=1;i=true;ft=200} @target ~onTimer:77 0.3
+    - setlevel{a=add;l=1} ~onKillPlayer 0.6
+    - pull{v=7} @RTT{r=10} ~onAttack 0.3
+    - command{c="playsound minecraft:entity.bat.hurt player <target.name> <trigger.l.x> <trigger.l.y> <trigger.l.z>" 1 0} @PIR{r=10} ~onDamaged 1
+    - command{c="playsound minecraft:entity.bat.death player <target.name> <trigger.l.x> <trigger.l.y> <trigger.l.z>" 1 0} @PIR{r=10} ~onDeath 1
+    - command{c="playsound minecraft:entity.bat.loop player <target.name> <trigger.l.x> <trigger.l.y> <trigger.l.z>" 1 0} @PIR{r=10} ~onChangeTarget 1
+    - command{c="playsound minecraft:entity.bat.hurt player <target.name> <trigger.l.x> <trigger.l.y> <trigger.l.z> 1 0"} @PIR{r=10} ~onDamaged 1
+    - command{c="playsound minecraft:entity.bat.ambient player <target.name> <trigger.l.x> <trigger.l.y> <trigger.l.z> 1 0"} @PIR{r=10} ~onShoot 1
+CHICKEN:
+  type: CHICKEN
+  display: 'Chicken'
+  Health: 20
+  Options:
+    MovementSpeed: 0.6
+    FollowRange: 40
+    RepeatAllSkills: true
+    MaxCombatRange: 5
+    NoDamageTicks: 15
+  Modules:
+    ImmunityTable: true
+  AIGoalSelectors:
+    - 0 fleeplayer
+    - 1 randomstroll
+  AITargetSelectors:
+    - 0 clear
+    - 1 attacker
+    - 2 player
+  Drops:
+    - exp 4-10 0.3
+    - FEATHER 1-5 1
+    - RAW_CHICKEN 1 1
+  LevelModifiers:
+    Health: 3
+    Damage: 2
+  Skills:
+    - damage{a=4;ia=true} @target ~onDamage
+
+#    - cast{
+#        skillName="&bDivine Feather";
+#        duration=40;
+#        onCast=DivineFeather-cast;
+#        onTick=DivineFeather-tick;
+#        onInterrupted=DivineFeather-interrupted;
+#        onNoTargets=DivineFeather-notargets;
+#        cancelOnMove=false;
+#        showCastBar=true
+#        } @target ~onDamaged
+#    - signal{s=TriggerDivineFeather} @self ~onDamaged

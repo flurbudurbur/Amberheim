@@ -1,0 +1,48 @@
+name: 'Taste For Blood'
+lore:
+- ''
+- '&bRewards:'
+- '&d► &310 XP levels'
+- '&d► &35 Diamonds'
+
+parent: []
+
+delay: 24
+
+objectives:
+  1:
+    type: 'killmob{type=COW;amount=10}'
+    lore: '&3Kill &b10 &3cows.'
+    bar-color: PURPLE
+    triggers:
+    - 'sound{sound="ENTITY_PLAYER_LEVELUP";volume=1;pitch=1}'
+    - 'message{format="&bYou''ve killed 10 cows, well done!"}'
+    - 'command{format="xp add @s 10 levels"}'
+    - 'item{type=DIAMOND;amount=5}'
+  2:
+    type: 'killmob{type=SHEEP;amount=10}'
+    lore: '&3Kill &b10 &3sheep.'
+    bar-color: PURPLE
+    triggers:
+    - 'sound{sound="ENTITY_PLAYER_LEVELUP";volume=1;pitch=1}'
+    - 'message{format="&bYou''ve killed 10 sheep, well done!"}'
+    - 'command{format="xp add @s 10 levels"}'
+    - 'item{type=DIAMOND;amount=5}'
+  3:
+    type: 'killmob{type=PIG;amount=10}'
+    lore: '&3Kill &b10 &3pigs.'
+    bar-color: PURPLE
+    triggers:
+    - 'sound{sound="ENTITY_PLAYER_LEVELUP";volume=1;pitch=1}'
+    - 'message{format="&bYou''ve killed 10 pigs, well done!"}'
+    - 'command{format="xp add @s 10 levels"}'
+    - 'item{type=DIAMOND;amount=5}'
+  4:
+    type: 'killmob{type=CHICKEN;amount=10}'
+    lore: '&3Kill &b10 &3chicken.'
+    bar-color: PURPLE
+    triggers:
+    - 'sound{sound="ENTITY_PLAYER_LEVELUP";volume=1;pitch=1}'
+    - 'message{format="&bYou''ve killed 10 chicken, well done!"}'
+    - 'command{format="xp add @s 10 levels"}'
+    - 'item{type=DIAMOND;amount=5}'

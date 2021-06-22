@@ -1,0 +1,198 @@
+#########################
+#####   LumberJack  #####
+#########################
+
+#
+# LumberJack provides the /lumberjack command, that toggles
+# tree gravity per player. Players need the lumberjack.use permission.
+# When a player has the lumberjack.force permission, they cannot
+# disable tree gravity.
+#
+# Aliases for /lumberjack:
+# - /treegravity
+# - /gravity
+# - /tg
+#
+
+# Whether gravity is enabled by default for new players
+# Hint: To force players using gravity, give them
+# the lumberjack.force permission
+gravity-enabled-by-default: true
+
+# When enabled, tree gravity will only apply when the
+# player used an axe to break the log.
+must-use-axe: false
+
+# Whether logs attached at the side or diagonally of the tree trunk
+# should also fall down
+attached-logs-fall-down: true
+
+# Prevents the placement of torches or other blocks
+# inside or under falling logs.
+# Also prevents the logs from starting to fall down
+# when the first block below the log (except air)
+# is not solid.
+prevent-torch-exploit: true
+
+# Prevents falling logs from dropping into items if the
+# player somehow manages to bypass the torch exploit
+# prevention.
+prevent-torch-exploit-aggressive: false
+
+# when set to true, players with gravity DISABLED will be
+# shown a message on how to enable tree gravity
+# when they break a log for the first time.
+# consider setting this to true when you disable gravity by default.
+# see also -> message-when-breaking-log
+show-message-when-breaking-log: false
+
+# when set to true, players with gravity ENABLED will be
+# shown a message on how to disable tree gravity
+# when they break a log for the first time.
+# consider setting this to true when you enable gravity by default.
+# see also -> message-when-breaking-log2
+show-message-when-breaking-log-and-gravity-is-enabled: false
+
+# when set to true, the messages are shown again when a player
+# logs out and back in and then breaks a log again.
+show-message-again-after-logout: false
+
+##########################
+##### Update Checker #####
+##########################
+
+# Checks for updates (asynchronously).
+# When enabled, a message is printed in the console if a new
+# version has been found, and OPs will be notified when they join the server
+# When set to true, check for updates on startup and every X hours (see "check-interval" below)
+# When set to on-startup, only check on server startup
+# When set to false, don't check for updates
+check-for-updates: true
+
+# When you set "check-for-updates" to true, you can define the amount
+# of hours inbetween each update check.
+check-interval: 4
+
+#########################
+##### tree blocks  ######
+#########################
+
+#### THIS HAS BEEN TEMPORARILY REMOVED ####
+# You can set the blocks that will be counted as tree part
+# Trees will only be counted as trees if all the blocks have
+# the same type of wood, e.g. a mixture of acacia and oak
+# will not be counted as a whole tree
+# Default is all types of logs, wood, stripped log and stripped wood
+#### THIS HAS BEEN TEMPORARILY REMOVED ####
+#tree-types:
+#  - ACACIA_LOG
+#  - BIRCH_LOG
+#  - DARK_OAK_LOG
+#  - JUNGLE_LOG
+#  - OAK_LOG
+#  - SPRUCE_LOG
+#  - STRIPPED_ACACIA_LOG
+#  - STRIPPED_BIRCH_LOG
+#  - STRIPPED_DARK_OAK_LOG
+#  - STRIPPED_JUNGLE_LOG
+#  - STRIPPED_OAK_LOG
+#  - STRIPPED_SPRUCE_LOG
+#  - CRIMSON_STEMS
+#  - WARPED_STEM
+
+#### THIS HAS BEEN TEMPORARILY REMOVED ####
+# If the tree does not stand on one of the following blocks,
+# it will not be counted as a tree.
+#### THIS HAS BEEN TEMPORARILY REMOVED ####
+#tree-ground-blocks:
+#- GRASS_BLOCK
+#- DIRT
+#- COARSE_DIRT
+#- MYCELIUM
+#- CRIMSON_NYLIUM
+#- WARPED_NYLIUM
+
+#### THIS WILL BE IMPLEMENTED LATER ####
+# Minimum number of leaves that have to be present per log.
+# E.g. 0.1 means there has to be at least one block of leaves for every ten logs
+#### THIS WILL BE IMPLEMENTED LATER ####
+min-leaves-per-log-ratio: 0.1
+
+# Maximum number of air blocks that can be inside the tree trunk
+# If more than the specificied number of air blocks are present inside the trunk,
+# it will not be counted as a tree
+max-air-in-trunk: 1
+
+#########################
+#### disabled worlds ####
+#########################
+
+# You can disable LumberJack for certain worlds. Each world's name has to
+# be on a separate line, starting with a hyphen and followed by a space
+
+# Example:
+#
+# disabled-worlds:
+# - world_nether
+# - world_the_end
+
+disabled-worlds:
+
+#########################
+##### localization ######
+#########################
+
+# Available color codes:
+# &0 Black        &b Gold       &c Red
+# &1 Dark Blue    &3 Gray       &d Light Purple
+# &2 Dark Green   &8 Dark Gray  &e Yellow
+# &3 Dark Aqua    &9 Blue       &f White
+# &4 Dark Red     &a Green     
+# &5 Dark Purple  &b Aqua
+
+# Available formatting codes:
+# &k Obfuscated   &m Strikethrough
+# &l Bold         &o Italic
+# &n Underline    &r Reset
+
+##### English
+message-gravity-enabled: "&3Tree gravity has been &aenabled&3."
+message-gravity-disabled: "&3Tree gravity has been &cdisabled&3."
+message-when-breaking-log: "&3Hint: Type &b/lumberjack&3 to enable tree gravity."
+message-when-breaking-log2: "&3Hint: Type &b/lumberjack&3 to disable tree gravity."
+message-can-not-disable: "&cYou are not allowed to disable tree gravity."
+
+##### Dutch
+#message-gravity-enabled: "&3Boom-zwaartekracht is &aaan&3 gezet."
+#message-gravity-disabled: "&3Boom-zwaartekracht is &cuit&3 gezet."
+#message-when-breaking-log: "&3Hint: Tik &b/lumberjack&3 om Boom-zwaartekracht aan te zetten."
+#message-when-breaking-log2: "&3Hint: Tik &b/lumberjack&3 om Boom-zwaartekracht uit te zetten."
+#message-can-not-disable: "&cHet is niet toegestaan voor je om Boom-zwaartekracht aan te zetten."
+
+##### French
+#message-gravity-enabled: "&3La gravité d'arbre a été &aactivée&3."
+#message-gravity-disabled: "&3La gravité d'arbre a été &cdésactivée&3."
+#message-when-breaking-log: "&3Astuce: écris &b/lumberjack&3 pour activer la gravité d'arbre."
+#message-when-breaking-log2: "&3Astuce: écris &b/lumberjack&3 pour désactiver la gravité d'arbre."
+#message-can-not-disable: "&cVous n'avez pas la permission de désactiver la gravité d'arbre."
+
+##### Spanish
+#message-gravity-enabled: "&3La gravedad de arboles ha sido &ahabilitada&3."
+#message-gravity-disabled: "&3La gravedad de arboles ha sido &cdeshabilitada&3."
+#message-when-breaking-log: "&3Lumberjack: Utiliza &b/lumberjack&3 para habilitar la gravedad de arboles."
+#message-when-breaking-log2: "&3Lumberjack: Utiliza &b/lumberjack&3 para deshabilitar la gravedad de arboles."
+#message-can-not-disable: "&cNo tienes permitido deshabilitar la gravedad de arboles."
+
+##### Turkish
+#message-gravity-enabled: "&3Ağaç yerçekimi &aaktifleştirildi&3."
+#message-gravity-disabled: "&3Ağaç yerçekimi &cdeaktifleştirildi&3."
+#message-when-breaking-log: "&3İpucu: Ağaç yerçekimini aktifleştirmek için &b/lumberjack&3 yazınız."
+#message-when-breaking-log2: "&3İpucu: Ağaç yerçekimini deaktifleştirmek için &b/lumberjack&3 yazınız."
+#message-can-not-disable: "&cAğaç yerçekimini deaktifleştirmek için yetkiniz yok."
+
+#########################
+#####     Done!     #####
+#########################
+
+# please do not change the following line manually!
+config-version: 10

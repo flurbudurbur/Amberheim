@@ -1,0 +1,41 @@
+<T>&dWelcome to &cAmberheim&d, [playerName].</T>
+
+<T>&3This will be a guide to how to get started on this server!</T>
+
+<T>&7Click to join our Discord!</T><H>&3Click me!</H><URL>http://discord.amberheim.com</URL>
+
+<T>&3We'll start on the next page.</T>
+
+<NextPage>
+<T>&dHow to get in and out of spawn?</T>
+
+<T>&6&lHover over me!</T><H>Hover over the commands\nfor an explanation!\n\n&c&lClick to execute them</H>
+
+<T>&c/rtp</T><H>&7Will randomly teleport\nyou anywhere in the world.</H><C>rtp</C>
+
+<T>&c/spawn</T><H>&7Will get you back to spawn</H><C>spawn</C>
+
+<T>&c/back</T><H>&7Will teleport you to\nthe location you\nwere last at.</H><C>back</C>
+
+<NextPage>
+<T>&dHow to claim land?</T>
+
+<T>&31. Get a wooden hoe.</T>
+<T>&32. Select an area &c&lHover.</T><H>&c1. Right click one block\n\n2. Left click another block on\nthe other side</H>
+<T>&33. Do &n/res create <name>&c&l Hover.</T><H>&c<name> is up to you.</H>
+
+<T>&c&lExample</T><H>&c/res create Home</H>
+<T>&cNote: particles will appear.</T>
+
+<NextPage>
+<T>&dHandy Landclaim Commands.</T>
+
+<T>&c- /res padd <res> <player></T><H>&3Add the player\nto your claim.\n\n&cExample:\n/res padd Home flur</H>
+<T>&4- /res pdel <res> <player></T><H>&3Remove the player\nfrom your claim.\n\n&cExample:\n/res pdel Home flur</H>
+<T>&c- /res pset <res> <player></T><H>&3Set the flags for\nthe player in\nthat claim.\n\n&cExample:\n/res pset Home flur</H>
+<T>&4- /res tpset <res></T><H>&3Set the teleport\nlocation for that\nclaim.\n\n&cExample:\n/res tpset Home</H>
+<T>&c- /res tp <res></T><H>&3Teleport to the TP\nlocation of that\nclaim.\n\n&cExample:\n/res tp home</H>
+<T>&4- /res remove <res></T><H>&3Delete the claim\n\n&cExample:\n/res remove Home</H>
+
+<NextPage>
+<T>&dHow to earn money

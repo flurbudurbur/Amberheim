@@ -1,0 +1,36 @@
+# Command section can utilize same custom variables as scheduler. Check schedules.yml file for all possible variables.
+
+world:
+  LonesomeGame:
+    Loc: -300.0:66.0:962.0:-298.0:71.0:962.0
+    enabled: true
+    effect: BubblePop
+    showParticles: true
+    safeLoc: world;-298.26;66.0;965.4;-180.47;2.84
+    Tp: world;-298.61;114.0;959.33;0.54;0.23
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 30
+    particleHide: 0
+    activationRange: 10
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+  LonesomeGameExit:
+    Loc: -300.0:114.0:965.0:-298.0:118.0:965.0
+    enabled: true
+    effect: BubblePop
+    showParticles: true
+    Tp: world;-298.48;66.0;967.99;179.49;0.95
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: true
+    informOnMissingPerm: true
+    particleAmount: 30
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s

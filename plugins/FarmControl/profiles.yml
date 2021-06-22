@@ -1,0 +1,60 @@
+# Please visit https://github.com/froobynooby/FarmControl/wiki/Profiles for help with making profiles.
+
+profiles:
+  # Remove random movements and disable collisions of mobs in animal farms
+  soft-nerf-animal-farms:
+    group:
+      types:
+        - "category:animal"
+      count: 15
+      distance: 5
+    actions:
+      - remove-random-movement
+      - disable-collisions
+
+  # Remove the awareness of mobs in animal farms
+  hard-nerf-animal-farms:
+    group:
+      types:
+        - "category:animal"
+      count: 15
+      distance: 5
+    actions:
+      - remove-awareness
+      - disable-collisions
+
+  # Remove the AI of mobs in animal farms
+  freeze-animal-farms:
+    group:
+      types:
+        - "category:animal"
+      count: 15
+      distance: 5
+    actions:
+      - remove-ai
+      - disable-collisions
+
+  hard-nerf-monster-farms:
+    group:
+      types:
+        - "category:monster"
+      count: 15
+      distance: 5
+    actions:
+      - remove-awareness
+      - disable-collisions
+
+  spawner-mobs:
+    group:
+      types:
+        - "blaze"
+        - "zombie"
+        - "skeleton"
+        - "cave_spider"
+        - "spider"
+        - "magma_cube"
+      count: 12
+      distance: same-chunk
+    actions:
+      - remove-awareness
+      - disable-collisions

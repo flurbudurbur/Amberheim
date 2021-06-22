@@ -1,0 +1,16 @@
+class-points: 0
+skill-points: 0
+attribute-points: 0
+attribute-realloc-points: 0
+level: 1
+experience: 0
+class: HUMAN
+waypoints: []
+friends: []
+last-login: 1624018145268
+bound-skills: []
+attribute: {}
+profession:
+  woodcutting:
+    exp: 152
+quest: {}

@@ -1,0 +1,296 @@
+###############################
+#######    BestTools    #######
+###############################
+
+# BestTools lets you automatically use the best tool you have in your inventory
+# when breaking blocks or attacking mobs. It also features automatic hotbar
+# refill when you run out of blocks.
+
+
+###############################
+#######    Commands     #######
+###############################
+
+# /besttools (or /bt:)  Toggle BestTools per player
+# /besttools hotbar:    Toggles whether BestTools only uses tools from your hotbar
+# /besttools reload:    Reloads the config file
+
+# /refill (or /rf:)     Toggle automatic hotbar refill per player
+
+# /besttools bl                      Shows your blacklist
+# /besttools bl add                  Adds your current item to your blacklist
+# /besttools bl add <items...>       Adds all specified items to your blacklist
+# /besttools bl add inventory        Adds all items in your inventory to your blacklist
+# /besttools bl add hotbar           Adds all items in your hotbar to your blacklist
+# /besttools bl remove               Removes your current item from your blacklist
+# /besttools bl remove <items...>    Removes all specified items from your blacklist
+# /besttools bl remove inventory     Removes all items in your inventory from your blacklist
+# /besttools bl remove hotbar        Removes all items in your hotbar from your blacklist
+# /besttools bl reset                Removes all items from your blacklist
+
+
+###############################
+#######   Permissions   #######
+###############################
+
+# besttools.use:        Allows to use the /besttools (or /bt) command
+# besttools.refill:     Allows to use the /refill (or /rf) command
+# besttools.reload:     Allows to use the /besttools reload command
+
+
+###############################
+#######  Placeholders   #######
+###############################
+
+# When using PlaceholderAPI, you can use the following placeholders:
+
+# %besttools_btenabled%    - true if this player has BestTools enabled, otherwise false
+# %besttools_rfenabled%    - true if this player has Refill enabled, otherwise false
+# %besttools_hotbaronly%   - true if this player has set BestTools to hotbar-only
+# %besttools_favoriteslot% - the slot number this player chose as favorite slot
+
+
+###############################
+####### General config  #######
+###############################
+
+# When false, new players have to run /besttools or /bt once to enable BestTools
+besttools-enabled-by-default: false
+
+# When false, new players have to run /refill or /rf once to enable hotbar refill
+refill-enabled-by-default: true
+
+# Only use tools from the hotbar? Can be changed per player using /besttools hotbar
+hotbar-only: true
+
+# The preferred slot where BestTools should move the tool if it's not in the hotbar
+# and hotbar-only is set to false. Must be a number between 0 (leftmost hotbar slot)
+# and 8 (rightmost hotbar slot)
+# Set this to -1 to always use the player's current slot
+favorite-slot: 8
+
+# When set to false, /besttools and /refill will only work in survival game mode
+# When set to true, it works in survival and adventure game mode
+allow-in-adventure-mode: false
+
+# When enabled, BestTools will not attempt to switch any tools when the player is
+# holding a sword, crossbow, bow or trident
+dont-switch-during-battle: true
+
+# Don't use items if they are going to break with this usage
+# NOT IMPLEMENTED YET
+#prevent-item-break: true
+
+# Allow /besttools to switch to your sword/axe (whatever is better) when attacking mobs?
+use-sword-on-hostile-mobs: true
+
+# Use axe instead of sword when the axe does more damage (it's slower though and does not deal sweep damage)
+use-axe-as-sword: false
+
+# NOT IMPLEMENTED YET, comes with next update
+#use-sword-on-friendly-mobs: false
+#use-sword-on-players: false
+
+###############################
+####### Global blacklist ######
+###############################
+
+# You can add blocks to the global blacklist here that will apply to ALL players.
+# Blocks broken that are mentioned in this list will not trigger BestTools.
+
+# Example:
+#
+# global-block-blacklist:
+# - POTATOES
+# - BEETROOTS
+# - CARROTS
+# - WHEAT
+
+global-block-blacklist:
+
+###############################
+####### Update checker  #######
+###############################
+
+# Checks for updates (asynchronously).
+# When enabled, a message is printed in the console if a new
+# version has been found, and OPs will be notified when they join the server
+# When set to true, check for updates on startup and every X hours (see "check-interval" below)
+# When set to on-startup, only check on server startup
+# When set to false, don't check for updates
+check-for-updates: true
+
+# When you set "check-for-updates" to true, you can define the amount
+# of hours inbetween each update check.
+check-interval: 4
+
+###############################
+#######  Localization   #######
+###############################
+
+# Available formatting codes:
+# &k Obfuscated   &m Strikethrough
+# &l Bold         &o Italic
+# &n Underline    &r Reset
+
+# Please note that using color codes in the GUI is not supported yet.
+
+# You can set messages to an empty String ("") to avoid displaying those messages.
+
+##### You can edit these messages yourself or uncomment the existing translations (see below)
+message-besttools-enabled: "&3BestTools has been &denabled&3."
+message-besttools-disabled: "&3BestTools has been &cdisabled&3."
+message-refill-enabled: "&3Refill has been &denabled&3."
+message-refill-disabled: "&3Refill has been &cdisabled&3."
+message-besttools-usage: "&3Hint: Type &b/besttools&3 or &b/bt&3 to automatically use the best tool when breaking blocks."
+message-refill-usage": "&3Hint: Type &b/refill&3 or &b/rf&3 to automatically refill empty items from your inventory."
+message-hotbar-only-enabled: "&3BestTools will only use tools from your hotbar."
+message-hotbar-only-disabled: "&3BestTools will use all tools from your inventory."
+gui-favorite-slot: "Set as favorite slot"
+gui-favorite-slot-lore: "If your hotbar is full and BestTools uses a tool from your inventory, it will be places in this slot."
+gui-besttools-lore: "Automatically chooses the best tools when breaking blocks."
+gui-hotbar-lore: "When enabled, BestTools will only use tools from your hotbar instead of from your whole inventory."
+gui-refill-lore: "Automatically refills empty hotbar slots."
+
+##### English
+#message-besttools-enabled: "&3BestTools has been &denabled&3."
+#message-besttools-disabled: "&3BestTools has been &cdisabled&3."
+#message-refill-enabled: "&3Refill has been &denabled&3."
+#message-refill-disabled: "&3Refill has been &cdisabled&3."
+#message-besttools-usage: "&3Hint: Type &b/besttools&3 or &b/bt&3 to automatically use the best tool when breaking blocks."
+#message-refill-usage": "&3Hint: Type &b/refill&3 or &b/rf&3 to automatically refill empty items from your inventory."
+#message-hotbar-only-enabled: "&3BestTools will only use tools from your hotbar."
+#message-hotbar-only-disabled: "&3BestTools will use all tools from your inventory."
+#gui-favorite-slot: "Set as favorite slot"
+#gui-favorite-slot-lore: "If your hotbar is full and BestTools uses a tool from your inventory, it will be places in this slot."
+#gui-besttools-lore: "Automatically chooses the best tools when breaking blocks."
+#gui-hotbar-lore: "When enabled, BestTools will only use tools from your hotbar instead of from your whole inventory."
+#gui-refill-lore: "Automatically refills empty hotbar slots."
+
+##### Chinese
+#message-besttools-enabled: "&3自动切换最佳工具 &d已启用&3."
+#message-besttools-disabled: "&3自动切换最佳工具 &c已禁用&3."
+#message-refill-enabled: "&3自动填充方块 &d已启用&3."
+#message-refill-disabled: "&3自动填充方块 &c已禁用&3."
+#message-besttools-usage: "&3提示: 输入指令 &b/besttools&3 或 &b/bt&3 可以在破坏任意方块时自动切换至最佳工具."
+#message-refill-usage: "&3提示: 输入指令 &b/refill&3 或 &b/rf&3 可以从背包里自动填充手中放置完的物品."
+#message-hotbar-only-enabled: "&3自动切换最佳工具 仅会根据快捷栏切换工具."
+#message-hotbar-only-disabled: "&3自动切换最佳工具 会根据背包内的所有物品切换工具."
+#gui-favorite-slot: "设置你的想要工具栏位"
+#gui-favorite-slot-lore: "如果你的快捷栏已满,自动工具系统会从你的背包中选取工具置于该工具栏位中"
+#gui-besttools-lore: "在破坏方块时自动选择最佳工具."
+#gui-hotbar-lore: "启用此项后, 插件只会选取你快捷栏中的最佳工具,而非整个背包内的最佳工具."
+#gui-refill-lore: "在放置方块时自动选择最佳方块."
+
+##### Chinese (Traditional)
+#message-besttools-enabled: "&3自動切換最佳工具 &d已啟用&3."
+#message-besttools-disabled: "&3自動切換最佳工具 &c已禁用&3."
+#message-refill-enabled: "&3自動填充方塊 &d已啟用&3."
+#message-refill-disabled: "&3自動填充方塊 &c已禁用&3."
+#message-besttools-usage: "&3提示: 輸入指令 &b/besttools&3 或 &b/bt&3 可以在破壞任意方塊時自動切換至最佳工具."
+#message-refill-usage: "&3提示: 輸入指令 &b/refill&3 或 &b/rf&3 可以從背包裡自動填充手中放置完的物品."
+#message-hotbar-only-enabled: "&3自動切換最佳工具 僅會根據快捷欄切換工具."
+#message-hotbar-only-disabled: "&3自動切換最佳工具 會根據背包內的所有物品切換工具."
+#gui-favorite-slot: "Set as favorite slot"
+#gui-favorite-slot-lore: "If your hotbar is full and BestTools uses a tool from your inventory, it will be places in this slot."
+#gui-besttools-lore: "Automatically chooses the best tools when breaking blocks."
+#gui-hotbar-lore: "When enabled, BestTools will only use tools from your hotbar instead of from your whole inventory."
+#gui-refill-lore: "Automatically refills empty hotbar slots."
+
+##### Dutch
+#message-besttools-enabled: "&3BestTools is nu &dingeschakeld&3."
+#message-besttools-disabled: "&3BestTools is nu &cuitgeschakelt&3."
+#message-refill-enabled: "&3Hervullen is nu &dingeschakeld&3."
+#message-refill-disabled: "&3Hervullen is nu &cuitgeschakelt&3."
+#message-besttools-usage: "&3Hint: Type &b/besttools&3 of &b/bt&3 om automatisch de beste tool te bruiker om blokken te breken."
+#message-refill-usage": "&3Hint: Type &b/refill&3 of &b/rf&3 om automatisch lege items uit je inventory te hervullen."
+#message-hotbar-only-enabled: "&3BestTools zult nu alleen tools uit je hotbar gebruiken."
+#message-hotbar-only-disabled: "&3BestTools zult nu alle tools uit je inventory gebruiken."
+#gui-favorite-slot: "Ze als favoriete slot"
+#gui-favorite-slot-lore: "Als je hotbar vol is en BestTools gebruikt een tool van je inventory dan word deze geplaats in dit slot."
+#gui-besttools-lore: "Kiest automatisch welke tools het beste is voor het breken van een blok."
+#gui-hotbar-lore: "Wanneer ingeschakeld, BestTools zult alleen tools gebruiken van je hotbar in plaats van je hele inventory."
+#gui-refill-lore: "Hervult automatische lege hotbar slots."
+
+##### German
+#message-besttools-enabled: "&3BestTools wurde &daktiviert&3."
+#message-besttools-disabled: "&3BestTools wurde &cdeaktiviert&3."
+#message-refill-enabled: "&3Refill wurde &daktiviert&3."
+#message-refill-disabled: "&3Refill wurde &cdeaktiviert&3."
+#message-besttools-usage: "&Hinweis: Benutze &b/besttools&3 oder &b/bt&3 um die automatische Werkzeugauswahl zu aktivieren."
+#message-refill-usage": "&3Hinweis: Benutze &b/refill&3 oder &b/rf&3 um die automatische Itemauffüllung zu aktivieren."
+#message-hotbar-only-enabled: "&3BestTools wird nur Werkzeuge aus deiner Hotbar benutzen."
+#message-hotbar-only-disabled: "&3BestTools wird alle Werkzeuge aus deinem Inventar benutzen."
+#gui-favorite-slot: "Als Lieblingsslot festlegen"
+#gui-favorite-slot-lore: "Wenn deine Hotbar voll ist und BestTools ein Werkzeug aus deinem Inventar nimmt, wird es in diesem Slot platziert."
+#gui-besttools-lore: "Benutzt automatisch das beste Werkzeuge beim Abbauen von Blöcken."
+#gui-hotbar-lore: "Wenn aktiviert wird BestTools nur Werkzeuge aus deiner Hotbar benutzen."
+#gui-refill-lore: "Füllt automatisch leere Hotbar-Slots auf."
+
+##### Russian - Thanks to @GEEK for translating!
+#message-besttools-enabled: "&3BestTools &dактивирован&3."
+#message-besttools-disabled: "&3BestTools &cдеактивирован&3."
+#message-refill-enabled: "&3Заполнение &dактивировано&3."
+#message-refill-disabled: "&3Заполнение &cдеактивировано&3."
+#message-besttools-usage: "&3Подсказка: Введите &b/besttools&3 или &b/bt&3 чтобы автоматически использовать лучший предмет для ломания блоков."
+#message-refill-usage": "&3Подсказка: Введите &b/refill&3 или &b/rf&3 чтобы автоматически наполнять ваши предметы в инвентаре."
+#message-hotbar-only-enabled: "&3BestTools будет использовать только инструменты с вашей панели быстрого доступа."
+#message-hotbar-only-disabled: "&3BestTools будет использовать все инструменты из вашего инвентаря."
+#gui-favorite-slot: "Установить любимый слот"
+#gui-favorite-slot-lore: "Если ваша панель быстрого доступа заполнена и BestTools использует инструмент из вашего инвентаря, он будет размещен в этом слоте."
+#gui-besttools-lore: "Автоматически выбирает лучшие инструменты при ломании блоков."
+#gui-hotbar-lore: "Когда этот параметр включен, BestTools будет использовать инструменты только из вашей панели быстрого доступа, а не из всего вашего инвентаря."
+#gui-refill-lore: "Автоматически заполняет пустые слоты панели быстрого доступа."
+
+##### Spanish
+#message-besttools-enabled: "&3BestTools ha sido &dhabilitado&3."
+#message-besttools-disabled: "&3BestTools ha sido &cdeshabilitado&3."
+#message-refill-enabled: "&3El relleno ha sido &dhabilitado&3."
+#message-refill-disabled: "&3El relleno ha sido &cdeshabilitado&3."
+#message-besttools-usage: "&3Uso: Ejecuta &b/besttools&3 o &b/bt&3 para usar la mejor herramienta automaticamente al romper bloques."
+#message-refill-usage": "&3Uso: Ejecuta &b/refill&3 o &b/rf&3 para rellenar automaticamente los espacios vacios en tu inventario."
+#message-hotbar-only-enabled: "&3BestTools solamente usara herramientas de tu hotbar."
+#message-hotbar-only-disabled: "&3BestTools solamente usara todos las herramientas de tu inventario."
+#gui-favorite-slot: "Set as favorite slot"
+#gui-favorite-slot-lore: "If your hotbar is full and BestTools uses a tool from your inventory, it will be places in this slot."
+#gui-besttools-lore: "Automatically chooses the best tools when breaking blocks."
+#gui-hotbar-lore: "When enabled, BestTools will only use tools from your hotbar instead of from your whole inventory."
+#gui-refill-lore: "Automatically refills empty hotbar slots."
+
+##### Turkish
+#message-besttools-enabled: "&3BestTools &daktif edildi&3."
+#message-besttools-disabled: "&3BestTools &cdeaktif edildi&3."
+#message-refill-enabled: "&3Otomatik doldurma &daktif edildi&3."
+#message-refill-disabled: "&3Otomatik doldurma &cdeaktif edildi&3."
+#message-besttools-usage: "&3İpucu: Blok kırarken otomatik olarak en iyi aleti kullanmak için &b/besttols&3 veya &b/bt&3 yazınız."
+#message-refill-usage": "&3İpucu: Slotunuzdaki blokları otomatik doldurmak için &b/refill&3 veya &b/rf&3 yazınız."
+#message-hotbar-only-enabled: "&3BestTools sadece slotlarınızdaki aletleri kullanacaktır."
+#message-hotbar-only-disabled: "&3BestTools envanterinizdeki bütün aletleri kullanacaktır."
+#gui-favorite-slot: "Favori slot olarak seç"
+#gui-favorite-slot-lore: "Eğer seçmiş olduğunuz slot zaten doluysa ve BestTools envanterinizdeki bir aleti kullanıyorsa, alet otomatik olarak bu slota yerleştirilecektir."
+#gui-besttools-lore: "Blok kırarken otomatik olarak en iyi aleti seçer."
+#gui-hotbar-lore: "Aktifken, BestTools envanterinizdeki öğeler yerine sadece slotlarınızdaki aletleri kullanır."
+#gui-refill-lore: "Otomatik olarak boş slotlarınızı doldurur."
+
+############################
+##### Technical stuff! #####
+############################
+
+# Show some infos on startup
+verbose: true
+
+# You can enable debug mode using /bt debug (permission: besttools.debug)
+debug: false
+
+# Prints the Material<>Tool map to a csv file
+dump: false
+
+# You can enable performance test using /bt performance (permission: besttools.debug)
+measure-performance: false
+
+# Do you like bad puns?
+puns: false
+
+# Do not change the following line! It is used to automatically update
+# your config to the latest version. Your changes will be kept.
+config-version: 16

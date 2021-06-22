@@ -1,0 +1,50 @@
+# GriefPrevention Flags
+# Plugin Version: 5.10.0
+# Server Version: git-Paper-778 (MC: 1.16.5)
+
+
+Settings:
+  Log Enter/Exit Messages To Console: true
+World Flags:
+  world:
+    Default Gamemode: survival
+    PvP Only In PvP-Flagged Claims: false
+    Message To Send When PvP Is Denied: Player vs. player combat is restricted to
+      designated areas.
+    Send Message On Enter PvP Enabled Claim: false
+    Message: PvP is enabled in this claim, be careful
+    Send Message On Exit PvP Enabled Claim: false
+    ExitMessage: PvP is disabled in this area, you are now safe
+    Biomes:
+      Blacklist:
+      - MUSHROOM_FIELDS
+      - MUSHROOM_FIELD_SHORE
+    NoMonsterSpawn Flag Ignores Spawners and Eggs: true
+  world_nether:
+    Default Gamemode: survival
+    PvP Only In PvP-Flagged Claims: false
+    Message To Send When PvP Is Denied: Player vs. player combat is restricted to
+      designated areas.
+    Send Message On Enter PvP Enabled Claim: false
+    Message: PvP is enabled in this claim, be careful
+    Send Message On Exit PvP Enabled Claim: false
+    ExitMessage: PvP is disabled in this area, you are now safe
+    Biomes:
+      Blacklist:
+      - MUSHROOM_FIELDS
+      - MUSHROOM_FIELD_SHORE
+    NoMonsterSpawn Flag Ignores Spawners and Eggs: true
+  world_the_end:
+    Default Gamemode: survival
+    PvP Only In PvP-Flagged Claims: false
+    Message To Send When PvP Is Denied: Player vs. player combat is restricted to
+      designated areas.
+    Send Message On Enter PvP Enabled Claim: false
+    Message: PvP is enabled in this claim, be careful
+    Send Message On Exit PvP Enabled Claim: false
+    ExitMessage: PvP is disabled in this area, you are now safe
+    Biomes:
+      Blacklist:
+      - MUSHROOM_FIELDS
+      - MUSHROOM_FIELD_SHORE
+    NoMonsterSpawn Flag Ignores Spawners and Eggs: true

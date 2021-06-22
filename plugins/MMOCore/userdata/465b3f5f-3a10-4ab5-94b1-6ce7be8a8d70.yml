@@ -1,0 +1,19 @@
+class-points: 0
+skill-points: 0
+attribute-points: 0
+attribute-realloc-points: 0
+level: 1
+experience: 8
+class: WARRIOR
+waypoints: []
+friends: []
+last-login: 1624292125558
+bound-skills: []
+attribute: {}
+profession:
+  woodcutting:
+    exp: 371
+    level: 0
+quest:
+  finished:
+    genericquest1: 1624116176092

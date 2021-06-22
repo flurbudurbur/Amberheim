@@ -1,0 +1,9 @@
+'&a&lWelcome':
+  Loc: world;-220.44;65.53;35.45
+  Range: 8
+  RangeExtra: 16
+  Spacing: 0.25
+  SpacingIcon: 0.5
+  Lines:
+  - '&a&lWelcome To'
+  - '&a&lAmberheim!'
