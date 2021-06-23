@@ -1,2 +1,1 @@
-Just a quicky!
-<br>BRUH
+fun!
